@@ -1,0 +1,24 @@
+
+
+.vedio-area {
+    padding: 300px 0;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.play-btn {
+    .video-btn {
+        width: 160px;
+        height: 110px;
+        line-height: 110px;
+        text-align: center;
+        background-color: $white;
+        color: $header-color;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 30px;
+        transform: translate(-50%,-50%);
+    }
+}
+ 

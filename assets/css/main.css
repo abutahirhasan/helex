@@ -264,6 +264,12 @@ span {
   transition: all 0.4s ease-in-out;
 }
 
+.d-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @-webkit-keyframes rippleOne {
   70% {
     -webkit-box-shadow: 0 0 0 40px rgba(244, 68, 56, 0);
@@ -1746,6 +1752,16 @@ span {
   padding: 0;
   color: #000;
   border: unset;
+}
+
+.social-cmn a {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  transition: all 0.4s;
+}
+.social-cmn a:hover {
+  background: var(--theme);
 }
 
 .hero-1 {

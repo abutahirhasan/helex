@@ -325,3 +325,31 @@ br {
   border: unset;
 }
 //Cart Style style
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Not Use up css
+
+
+//Social Cmn Style
+.social-cmn{
+	a{
+		width: 40px;
+		min-width: 40px;
+		height: 40px;
+		transition: all 0.4s;
+		&:hover{
+			background: $theme-color;
+		}
+	}
+}

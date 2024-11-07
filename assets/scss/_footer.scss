@@ -48,7 +48,6 @@
 					font-size: 16px;
 					&:hover {
 						color: $theme-color;
-						margin-left: 4px;
 					}
 				}
 			}
@@ -81,9 +80,9 @@
 			}
 		}
 	}
-    @include breakpoint(max-md){
-        padding: 80px 0 70px;
-    }
+	@include breakpoint(max-md) {
+		padding: 80px 0 70px;
+	}
 }
 
 .footer-bottom {
@@ -92,4 +91,60 @@
 	@include breakpoint(max-xl) {
 		padding: 22px 0;
 	}
+}
+
+//Footer Style 02
+.footer-style2 {
+	.single-footer-widget {
+		.social-cmn {
+			a {
+				background: $white;
+                border: 1px solid $black;
+				i {
+					color: $black;
+				}
+                &:hover{
+                    border-color: $theme-color;
+                }
+			}
+		}
+		.footer-content {
+			.adjust-form {
+				input {
+                    background: $black;
+					color: $white;
+					&::placeholder {
+						color: $white;
+					}
+				}
+			}
+		}
+		.important-link {
+			li {
+				a {
+					color: $black;
+				}
+			}
+		}
+		.adredd-info {
+			li {
+                svg{
+                    path{
+                        stroke: $black;
+                    }
+                }
+				a {
+					color: $black;
+				}
+				&:hover {
+					a {
+						color: $theme-color;
+					}
+				}
+			}
+		}
+	}
+    .footer-bottom{
+        border-color: #ebebeb;
+    }
 }

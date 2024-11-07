@@ -807,7 +807,6 @@ span {
 }
 .footer-widget-wrapper .single-footer-widget .important-link li a:hover {
   color: var(--theme);
-  margin-left: 4px;
 }
 .footer-widget-wrapper .single-footer-widget .adredd-info li a {
   color: var(--text);
@@ -842,6 +841,39 @@ span {
   .footer-bottom {
     padding: 22px 0;
   }
+}
+
+.footer-style2 .single-footer-widget .social-cmn a {
+  background: var(--white);
+  border: 1px solid var(--black);
+}
+.footer-style2 .single-footer-widget .social-cmn a i {
+  color: var(--black);
+}
+.footer-style2 .single-footer-widget .social-cmn a:hover {
+  border-color: var(--theme);
+}
+.footer-style2 .single-footer-widget .footer-content .adjust-form input {
+  background: var(--black);
+  color: var(--white);
+}
+.footer-style2 .single-footer-widget .footer-content .adjust-form input::placeholder {
+  color: var(--white);
+}
+.footer-style2 .single-footer-widget .important-link li a {
+  color: var(--black);
+}
+.footer-style2 .single-footer-widget .adredd-info li svg path {
+  stroke: var(--black);
+}
+.footer-style2 .single-footer-widget .adredd-info li a {
+  color: var(--black);
+}
+.footer-style2 .single-footer-widget .adredd-info li:hover a {
+  color: var(--theme);
+}
+.footer-style2 .footer-bottom {
+  border-color: #ebebeb;
 }
 
 .header-top-section {

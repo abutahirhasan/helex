@@ -9,6 +9,19 @@ $sub-font: "Dancing Script", cursive;
 $body-font: "Barlow", sans-serif;
 
 //font-family: "Font Awesome 6 Free";
+
+//Default FOnt
+.heading-font{
+	font-family: $heading-font;
+}
+.sub-font{
+	font-family: $sub-font;
+}
+.body-font{
+	font-family: $body-font;
+}
+//Default FOnt
+
 $fa: "Font Awesome 6 Pro";
 
 body {
@@ -55,7 +68,6 @@ h6 {
 	font-style: normal;
 	padding: 0;
 	color: $header-color;
-	text-transform: uppercase;
 	@include transition;
 }
 

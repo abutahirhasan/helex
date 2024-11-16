@@ -93,5 +93,31 @@
     }
 }
 
+.view-more{
+    transition: all 0.4s;
+    .view-text{
+        font-size: 14px;
+        font-weight: 600;
+        color: $black;
+        transition: all 0.4s;
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: all 0.4s;
+        transform: rotate(-15deg);
+        i{
+            transition: all 0.4s;
+        }
+    }
+    &:hover{
+        .icon{
+            transform: rotate(-0deg);
+            background: $theme-color;
+        }
+    }
+}
+
 
 //>>>>> Component Button End <<<<<//

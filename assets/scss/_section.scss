@@ -4,21 +4,25 @@
 .section-title{
 	position: relative;
 	z-index: 99;
-	margin-bottom: 30px;
-	//margin-top: -5px;
-
-	@include breakpoint (max-md){
-		margin-bottom: 0;
-	}
-
 	span {
 		display: inline-block;
-		font-size: 18px;
-		font-weight: 700;
+		font-size: 22px;
+		font-weight: 800;
 		line-height: 1;
-		text-transform: uppercase;
 		color: $header-color;
 		margin-bottom: 12px;
+	}
+}
+.mb-50{
+	margin-bottom: 50px;
+	@include breakpoint(max-xl){
+		margin-bottom: 40px;
+	}
+	@include breakpoint(max-lg){
+		margin-bottom: 30px;
+	}
+	@include breakpoint(max-sm){
+		margin-bottom: 24px;
 	}
 }
 
@@ -57,7 +61,7 @@
 
 
 .section-padding {
-	padding: 140px 0;
+	padding: 120px 0;
 
 	@include breakpoint(max-xl){
 		padding: 100px 0;

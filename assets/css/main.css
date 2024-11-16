@@ -23,7 +23,12 @@ Version: 1.0.0
   --border: #e2dfeb;
   --bg:#F9DABB;
   --bg2:#F8F5F0;
+  --bg3:#FFFDFB;
   --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
+}
+
+.bg3 {
+  background: var(--bg3);
 }
 
 .black-clr {
@@ -198,9 +203,45 @@ Version: 1.0.0
   color: var(--theme);
 }
 
+.view-more {
+  transition: all 0.4s;
+}
+.view-more .view-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+  transition: all 0.4s;
+}
+.view-more .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.4s;
+  transform: rotate(-15deg);
+}
+.view-more .icon i {
+  transition: all 0.4s;
+}
+.view-more:hover .icon {
+  transform: rotate(0deg);
+  background: var(--theme);
+}
+
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
+.heading-font {
+  font-family: "Kalnia", serif;
+}
+
+.sub-font {
+  font-family: "Dancing Script", cursive;
+}
+
+.body-font {
+  font-family: "Barlow", sans-serif;
+}
+
 body {
   font-family: "Barlow", sans-serif;
   font-size: 20px;
@@ -245,7 +286,6 @@ h6 {
   font-style: normal;
   padding: 0;
   color: var(--header);
-  text-transform: uppercase;
   transition: all 0.4s ease-in-out;
 }
 
@@ -2217,24 +2257,151 @@ span {
   margin-bottom: 20px;
 }
 
+.blog-single-item {
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.blog-single-item .blog-admin {
+  margin-bottom: 22px;
+}
+.blog-single-item .blog-admin li {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+}
+.blog-single-item h3 {
+  margin-bottom: 24px;
+}
+.blog-single-item .thumb img {
+  transition: all 0.4s;
+}
+.blog-single-item:hover .thumb img {
+  transform: scale(1.05);
+}
+@media (max-width: 1199px) {
+  .blog-single-item .blog-admin {
+    margin-bottom: 10px;
+  }
+  .blog-single-item h3 {
+    margin-bottom: 18px;
+  }
+  .blog-single-item h3 a {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .blog-single-item .view-more .icon {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.stories-section .container {
+  max-width: 1660px;
+  margin: 0 auto;
+}
+
+.stories-wrapper {
+  display: grid;
+  align-items: flex-start;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+.stories-wrapper .stories-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.stories-wrapper .stories-item .ista {
+  width: 46px;
+  height: 46px;
+  border-radius: 5px;
+  background: var(--theme);
+  position: absolute;
+  z-index: 1;
+  transform: rotateX(90deg);
+}
+.stories-wrapper .stories-item .ista i {
+  color: var(--black);
+}
+.stories-wrapper .stories-item img {
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.stories-wrapper .stories-item::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.329);
+  transition: all 0.5s;
+  z-index: 1;
+}
+.stories-wrapper .stories-item:hover .ista {
+  transform: rotateX(0deg);
+}
+.stories-wrapper .stories-item:hover::before {
+  width: 100%;
+}
+.stories-wrapper .stories-item:hover img {
+  transform: scale(1.05) rotate(2deg);
+}
+@media (max-width: 1399px) {
+  .stories-wrapper {
+    gap: 14px;
+  }
+  .stories-wrapper .stories-item .ista {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .stories-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    justify-content: center;
+  }
+}
+@media (max-width: 575px) {
+  .stories-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 14px;
+    justify-content: center;
+  }
+}
+
 .section-title {
   position: relative;
   z-index: 99;
-  margin-bottom: 30px;
-}
-@media (max-width: 767px) {
-  .section-title {
-    margin-bottom: 0;
-  }
 }
 .section-title span {
   display: inline-block;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 800;
   line-height: 1;
-  text-transform: uppercase;
   color: var(--header);
   margin-bottom: 12px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+@media (max-width: 1199px) {
+  .mb-50 {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .mb-50 {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .mb-50 {
+    margin-bottom: 24px;
+  }
 }
 
 .section-title-area {
@@ -2265,7 +2432,7 @@ span {
 }
 
 .section-padding {
-  padding: 140px 0;
+  padding: 120px 0;
 }
 @media (max-width: 1199px) {
   .section-padding {

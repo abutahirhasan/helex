@@ -1,0 +1,78 @@
+//Stories Section
+.stories-section {
+	.container {
+		max-width: 1660px;
+		margin: 0 auto;
+	}
+}
+.stories-wrapper {
+	display: grid;
+	align-items: flex-start;
+	width: 100%;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 24px;
+	.stories-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+		.ista {
+			width: 46px;
+			height: 46px;
+			border-radius: 5px;
+			background: $theme-color;
+			position: absolute;
+			z-index: 1;
+			transform: rotateX(90deg);
+			i {
+				color: $black;
+			}
+		}
+		img {
+			overflow: hidden;
+			transition: all 0.5s;
+		}
+		&::before {
+			position: absolute;
+			content: "";
+			width: 0%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.329);
+			transition: all 0.5s;
+			z-index: 1;
+		}
+		&:hover {
+			.ista {
+				transform: rotateX(0deg);
+			}
+			&::before {
+				width: 100%;
+			}
+			img {
+				transform: scale(1.05) rotate(2deg);
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
+		gap: 14px;
+		.stories-item {
+			.ista {
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 14px;
+        justify-content: center;
+	}
+	@include breakpoint(max-sm) {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 14px;
+        justify-content: center;
+	}
+}
+//Stories Section

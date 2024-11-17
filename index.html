@@ -41,7 +41,7 @@
         </button> -->
 
     <!-- Header Top Section Start -->
-    <div class="header-top-section d-lg-block d-none overflow-hidden">
+    <div class="header-top-section d-lg-none overflow-hidden">
         <div class="container">
             <div class="header-top-wrapper">
                 <ul class="contact-list">
@@ -144,10 +144,10 @@
     <div class="offcanvas__overlay"></div>
 
     <!-- Header Section Start -->
-    <header id="header-sticky" class="header-1">
+    <header id="header-sticky" class="header-1 white-variation">
         <div class="container">
             <div class="mega-menu-wrapper">
-                <div class="header-main style-2">
+                <div class="header-main">
                     <div class="header-left">
                         <div class="logo">
                             <a href="index.html" class="header-logo">
@@ -204,13 +204,16 @@
                                         </li>
                                         <li>
                                             <a href="news.html">
-                                                Listing
+                                                Rooms
                                                 <i class="fas fa-angle-down"></i>
                                             </a>
                                             <ul class="submenu">
-                                                <li><a href="#0">Listing</a></li>
-                                                <li><a href="#0">Listing Details</a></li>
+                                                <li><a href="#0">Single Bed</a></li>
+                                                <li><a href="#0">Couple Bed</a></li>
                                             </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">RESTAURANT</a>
                                         </li>
                                         <li class="has-dropdown">
                                             <a href="news.html">
@@ -219,22 +222,22 @@
                                             </a>
                                             <ul class="submenu">
                                                 <li><a href="about.html">About Us</a></li>
-                                                <li><a href="doctor.html">Doctor</a></li>
-                                                <li><a href="doctor-details.html">Doctor Details</a></li>
-                                                <li><a href="pricing.html">Pricing</a></li>
+                                                <li><a href="about.html">About Us</a></li>
+                                                <li><a href="about.html">About Us</a></li>
+                                                <li><a href="about.html">About Us</a></li>
+                                                <li><a href="about.html">About Us</a></li>
                                             </ul>
                                         </li>
                                         <li>
                                             <a href="news.html">
-                                                Blog
+                                                News
                                                 <i class="fas fa-angle-down"></i>
                                             </a>
                                             <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                                <li><a href="blog.html">News</a></li>
+                                                <li><a href="blog-details.html">News Details</a></li>
                                             </ul>
                                         </li>
-
                                         <li>
                                             <a href="contact.html">Contact</a>
                                         </li>
@@ -242,20 +245,25 @@
                                 </nav>
                             </div>
                         </div>
-                        <a href="#0" class="search-trigger search-icon d-xl-none d-block"><i
-                                class="fal fa-search"></i></a>
+                        <a href="#0" class="search-trigger search-icon d-xl-none d-block">
+                           <img src="assets/img/icon/search.png" alt="img">
+                        </a>
                         <div class="header__hamburger d-xl-none my-auto">
                             <div class="sidebar__toggle">
-                                <img src="assets/img/icon/menu.png" alt="icon">
+                                <img src="assets/img/icon/bars.png" alt="icon">
                             </div>
                         </div>
                     </div>
-                    <div class="header-help d-lg-flex d-none align-items-center gap-xxl-3 gap-2">
-                        <div class="user-dropdown">
-                            <i class="fa-regular fa-circle-user"></i>
-                        </div>
-                        <button type="button" class="theme-btn fw-normal text-capitalize gap-1 py-3 px-6">
-                            <i class="fa-solid fa-magnifying-glass"></i> Search
+                    <div class="d-lg-flex d-none align-items-center gap-xxl-4 gap-3">
+                        <a href="#0" class="search-trigger">
+                            <img src="assets/img/icon/search.png" alt="img">
+                        </a>
+                        <button type="button" class="tolly-icon position-relative">
+                            <img src="assets/img/icon/tolly.png" alt="tolly-icon">
+                            <span class="count-quan d-center">02</span>
+                        </button>
+                        <button type="button" class="destop-bars sidebar__toggle">
+                            <img src="assets/img/icon/bars.png" alt="img">
                         </button>
                     </div>
                 </div>
@@ -265,72 +273,53 @@
 
 
     <!-- Hero section start -->
-    <section class="hero-section d-none">
+    <section class="hero-section">
         <div class="swiper hero-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="hero-1">
                         <div class="hero-bg bg-cover" style="background-image: url(assets/img/hero/01.jpg);"></div>
                         <div class="container">
-                            <div class="hero-content">
-                                <h1 class="text-center">
-                                    <span class="discover">Discover</span>
-                                    <span>your amazing city</span>
+                            <div class="hero-content text-center">
+                                <span class="sub-font sub-title fs-20 mb-sm-4 mb-3 d-block">Authentic historical charm</span>
+                                <h1 class="mb-5 white-clr fw-semibold">
+                                    One <span class="theme-clr">&</span> Only <br> Moonlight at Your <br> Next Home
                                 </h1>
-                                <div class="listing-search-form">
-                                    <div class="search-wrap">
-                                        <form class="search-form-main" action="#0" role="search">
-                                            <input type="text" class="search-first"
-                                                placeholder="Looking for shopping, restaurant...">
-                                            <div class="category-select">
-                                                <select name="category">
-                                                    <option value="">All Categories</option>
-                                                    <option class="level-0" value="33">Beauty</option>
-                                                    <option class="level-0" value="34">Fitness</option>
-                                                    <option class="level-0" value="35">Party Center</option>
-                                                    <option class="level-0" value="36">Restaurants</option>
-                                                    <option class="level-0" value="37">Shopping</option>
-                                                    <option class="level-0" value="38">Traveling</option>
-                                                </select>
-                                            </div>
-                                            <div
-                                                class="category-select d-flex justify-content-between align-items-center">
-                                                <input type="text" placeholder="Location (e.g. New York)">
-                                                <i class="fa-solid fa-location-dot"></i>
-                                            </div>
-                                            <button type="button"
-                                                class="theme-btn fw-normal text-capitalize gap-1 py-3 px-6">
-                                                <i class="fa-solid fa-magnifying-glass"></i> Search
-                                            </button>
-                                        </form>
-                                    </div>
+                                <div class="hero-btn-adjust">
+                                    <a href="#" class="theme-btn fw-normal text-capitalize gap-1 px-6">
+                                        Book Now
+                                    </a>
+                                    <a href="#" class="room">
+                                        <img src="assets/img/icon/right-arrow.png" alt="img" class="right-arrow"> View
+                                        Room
+                                    </a>
                                 </div>
-                                <ul class="browse-hilisht position-relative">
-                                    <li class="b-hilisht-text pe-2">
-                                        Or browse the highlights:
-                                    </li>
-                                    <li class="b-hilisht-item d-inline-flex gap-2 align-items-center">
-                                        <i class="fas fa-plane"></i>
-                                        Traveling
-                                    </li>
-                                    <li class="b-hilisht-item d-inline-flex gap-2 align-items-center">
-                                        <i class="fas fa-shopping-bag"></i>
-                                        Shopping
-                                    </li>
-                                    <li class="b-hilisht-item d-inline-flex gap-2 align-items-center">
-                                        <i class="fas fa-map-marker"></i>
-                                        Places
-                                    </li>
-                                    <!-- Ele -->
-                                    <img src="assets/img/element/arrow.png" alt="img" class="arrow-ele">
-                                </ul>
                             </div>
+                        </div>
+                        <div class="hero-slide-btn">
+                            <button type="button" class="common-slide-btn d-center rounded-1 array-prev">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                            <button type="button" class="common-slide-btn d-center rounded-1 array-next">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Highlight Text -->
+    <div class="highlight-text py-3 theme-bg">
+        <div class="container">
+            <p class="fs-18 body-font black-clr text-center fw-500">
+                We are offering 20% off when you book 2 nights or more on our website this summer! Valid from May 1st
+                through August
+                1st.
+            </p>
+        </div>
+    </div>
 
     <!-- Service section start -->
     <section class="service-section section-padding fix d-none">

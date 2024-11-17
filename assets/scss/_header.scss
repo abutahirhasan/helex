@@ -81,7 +81,7 @@
 				position: relative;
 				list-style: none;
 				display: inline-block;
-				margin-inline-end: 26px;
+				margin-inline-end: 30px;
 
 				&:last-child {
 					margin-inline-end: 0;
@@ -90,13 +90,13 @@
 				a {
 					display: inline-block;
 					font-size: 18px;
-					font-weight: 600;
+					font-weight: 500;
 					color: $black;
 					padding: 16px 0;
 					text-align: left;
 					font-family: $body-font;
 					position: relative;
-					text-transform: capitalize;
+					text-transform: uppercase;
 					@include transition;
 
 					i {
@@ -137,8 +137,8 @@
 							position: relative;
 							z-index: 11;
 							font-size: 16px;
-							font-weight: 600;
-							color: $black;
+							font-weight: 500;
+							color: $black !important;
 							padding: 0 18px;
 							padding-bottom: 11px;
 							padding-top: 11px;
@@ -322,18 +322,45 @@
 
 	.sidebar__toggle {
 		cursor: pointer;
-		width: 30px;
+		width: 40px;
 		font-size: 20px;
 		img {
 			width: 30px;
+			object-fit: contain;
+		}
+	}
+	.search-trigger{
+		font-size: 19px;
+		color: $white;
+	}
+	.tolly-icon{
+		.count-quan{
+			position: absolute;
+			top: -6px;
+			right: -6px;
+			width: 20px;
+			height: 20px;
+			display: block;
+			border-radius: 50%;
+			background: $white;
+			font-size: 11px;
+			line-height: 12px;
+			padding: 3px;
+			font-weight: 600;
+
+			font-family: $body-font;
 		}
 	}
 }
 
 .header-1 {
-	.mega-menu-wrapper {
-		border-radius: 100px;
-		padding: 0 22px 0;
+	position: absolute;
+	width: 100%;
+	z-index: 9;
+	background: rgb(245, 178, 69, 0.05);
+	.container{
+		max-width: 1710px;
+		margin: 0 auto
 	}
 	.header-main {
 		.header-left {
@@ -403,7 +430,6 @@
 			@include breakpoint(max-xxl) {
 				gap: 7px;
 			}
-
 			.search-icon {
 				width: 50px;
 				height: 50px;
@@ -424,7 +450,6 @@
 					line-height: 40px;
 				}
 			}
-
 			.header-button {
 				@include breakpoint(max-xxl) {
 					display: none;
@@ -433,16 +458,14 @@
 		}
 	}
 	.header-logo {
-		width: 120px;
+		width: 90px;
         display: block;
 		img {
 			width: 100%;
+			object-fit: contain;
 		}
 	}
 	@include breakpoint(max-xl) {
-		.mega-menu-wrapper {
-			padding: 0 20px 0 20px;
-		}
 		.common-btn {
 			padding: 9px 16px 11px !important;
 			i {
@@ -451,9 +474,6 @@
 		}
 	}
 	@include breakpoint(max-xxsmall) {
-		.mega-menu-wrapper {
-			padding: 0 14px 0 14px;
-		}
 		.header-logo {
 			max-width: 100px;
 			img {

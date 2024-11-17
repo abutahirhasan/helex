@@ -120,15 +120,12 @@ CSS TABLE OF CONTENTS
 				},
 			});
 		}
-
-
-		//NOt use Bottom Code
-
 		const heroSLider = new Swiper(".hero-slider", {
 			// Optional parameters
-			speed: 3500,
+			speed: 4500,
 			loop: true,
 			slidesPerView: 1,
+			simulateTouch: false,
 			autoplay: true,
 			effect: "fade",
 			breakpoints: {
@@ -166,6 +163,8 @@ CSS TABLE OF CONTENTS
 				nextEl: ".array-prev",
 			},
 		});
+
+		//NOt use Bottom Code
 
 		//>> Project Slider Start <<//
 		if ($(".project-slider").length > 0) {

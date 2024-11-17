@@ -41,9 +41,9 @@
 		.quote-opa {
 			width: 150px;
 		}
-        .quotes{
-            width: 30px;
-        }
+		.quotes {
+			width: 30px;
+		}
 	}
 }
 .testimonial-btngrap {
@@ -98,9 +98,9 @@
 			}
 		}
 	}
-    @include breakpoint(max-sm){
-        margin-top: 20px;
-    }
+	@include breakpoint(max-sm) {
+		margin-top: 20px;
+	}
 }
 //Testimonial
 
@@ -112,3 +112,111 @@
 	}
 }
 //Common Testimonial Btn
+
+//Apartment Testimonial
+.apartment-item {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	.apartment-cont {
+		position: absolute;
+		bottom: 60px;
+		width: 80%;
+		background: $black;
+		padding: 28px 50px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.theme-btn {
+			border: 1px solid $white;
+		}
+		.apartment-cont-inner {
+			display: flex;
+			gap: 70px;
+		}
+	}
+	@include breakpoint(max-xl4) {
+		.apartment-cont {
+			position: absolute;
+			bottom: 40px;
+			width: 90%;
+			background: $black;
+			padding: 24px 24px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.theme-btn {
+				border: 1px solid $white;
+			}
+			.apartment-cont-inner {
+				display: flex;
+				gap: 30px;
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
+		.apartment-cont {
+			position: absolute;
+			bottom: 40px;
+			width: 90%;
+			background: $black;
+			padding: 24px 24px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+            gap: 16px 20px;
+            flex-wrap: wrap;
+			.theme-btn {
+				border: 1px solid $white;
+			}
+			.apartment-cont-inner {
+				display: flex;
+				gap: 16px 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+			}
+		}
+	}
+    @include breakpoint(max-md){
+        .mimg{
+            height: 500px;
+        }
+    }
+	@include breakpoint(max-sm) {
+		.apartment-cont {
+			bottom: 0px;
+			width: 100%;
+			background: $black;
+			padding: 16px 16px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+            gap: 10px 20px;
+            flex-wrap: wrap;
+			.theme-btn {
+				border: 1px solid $white;
+			}
+			.apartment-cont-inner {
+				display: flex;
+				gap: 14px 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+                .invirment{
+                    li{
+                        img{
+                            width: 20px;
+                        }
+                        span{
+                            font-size: 14px;
+                        }
+                    }
+                }
+			}
+		}
+         .mimg{
+            height: 350px;
+            object-fit: cover;
+        }
+	}
+}
+//Apartment Testimonial

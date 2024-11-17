@@ -164,6 +164,45 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//>> Apartment Slider Start <<//
+		const apartmentSlider = new Swiper(".apartment-slider", {
+			spaceBetween: 24,
+			speed: 2000,
+			loop: true,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2000,
+				// disableOnInteraction: false,
+			},
+			pagination: {
+				el: ".dots",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".array-prev",
+				prevEl: ".array-next",
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 1.5,
+				},
+				991: {
+					slidesPerView: 1.2,
+				},
+				767: {
+					slidesPerView: 1,
+				},
+				575: {
+					slidesPerView: 1,
+				},
+				400: {
+					slidesPerView: 1,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
 		//NOt use Bottom Code
 
 		//>> Project Slider Start <<//

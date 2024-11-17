@@ -1,0 +1,64 @@
+//About Section
+.thumb2-wrap {
+	.thumb2-inne {
+		display: flex;
+		align-items: center;
+		gap: 52px;
+		.thumb-small {
+			max-width: 300px;
+			img {
+				width: 100%;
+			}
+		}
+		.about-textcircle {
+			.boxes {
+				padding-top: 20px;
+				.exprience {
+					font-family: $heading-font;
+					font-size: 70px;
+					font-weight: 300;
+					color: $theme-color;
+					margin-bottom: 24px;
+					.year {
+						font-size: 20px;
+						font-family: $body-font;
+						color: #070a01;
+						opacity: 0.52;
+						margin-bottom: -20px;
+					}
+				}
+			}
+		}
+		@include breakpoint(max-xxl) {
+			gap: 24px;
+		}
+		@include breakpoint(max-sm) {
+			flex-wrap: wrap;
+			.thumb-small {
+				max-width: 100%;
+                width: 100%;
+				img {
+					width: 100%;
+				}
+			}
+            .about-textcircle{
+                margin: 0 auto;
+            }
+		}
+	}
+}
+.about-shape-left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.about-shape-right{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+//About Section

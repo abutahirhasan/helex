@@ -87,6 +87,43 @@ CSS TABLE OF CONTENTS
 		//>> Nice Select Start <<//
 		$("select").niceSelect();
 
+		//>> Testimonial Slider Start <<//
+		if ($(".testimonial-slider").length > 0) {
+			const testimonialSlider = new Swiper(".testimonial-slider", {
+				spaceBetween: 30,
+				speed: 2000,
+				loop: true,
+				autoplay: {
+					delay: 2000,
+					disableOnInteraction: false,
+				},
+				navigation: {
+					nextEl: ".array-prev",
+					prevEl: ".array-next",
+				},
+				breakpoints: {
+					991: {
+						slidesPerView: 1,
+					},
+					767: {
+						slidesPerView: 1,
+					},
+					575: {
+						slidesPerView: 1,
+					},
+					400: {
+						slidesPerView: 1,
+					},
+					0: {
+						slidesPerView: 1,
+					},
+				},
+			});
+		}
+
+
+		//NOt use Bottom Code
+
 		const heroSLider = new Swiper(".hero-slider", {
 			// Optional parameters
 			speed: 3500,
@@ -190,40 +227,6 @@ CSS TABLE OF CONTENTS
 					},
 					767: {
 						slidesPerView: 2,
-					},
-					575: {
-						slidesPerView: 1,
-					},
-					400: {
-						slidesPerView: 1,
-					},
-					0: {
-						slidesPerView: 1,
-					},
-				},
-			});
-		}
-
-		//>> Testimonial Slider Start <<//
-		if ($(".testimonial-slider").length > 0) {
-			const testimonialSlider = new Swiper(".testimonial-slider", {
-				spaceBetween: 30,
-				speed: 1000,
-				loop: true,
-				autoplay: {
-					delay: 1000,
-					disableOnInteraction: false,
-				},
-				navigation: {
-					nextEl: ".array-prev",
-					prevEl: ".array-next",
-				},
-				breakpoints: {
-					991: {
-						slidesPerView: 1,
-					},
-					767: {
-						slidesPerView: 1,
 					},
 					575: {
 						slidesPerView: 1,

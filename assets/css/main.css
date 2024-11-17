@@ -398,6 +398,26 @@ span {
   justify-content: center;
 }
 
+.fs-32 {
+  font-size: 32px;
+  line-height: 132%;
+}
+@media (max-width: 1199px) {
+  .fs-32 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 991px) {
+  .fs-32 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .fs-32 {
+    font-size: 22px;
+  }
+}
+
 @-webkit-keyframes rippleOne {
   70% {
     -webkit-box-shadow: 0 0 0 40px rgba(244, 68, 56, 0);
@@ -2594,4 +2614,120 @@ span {
   .mb-60 {
     margin-bottom: 35px;
   }
+}
+
+.testimonial-items1 {
+  position: relative;
+}
+.testimonial-items1::before {
+  top: 50px;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background: var(--theme);
+  z-index: -1;
+  opacity: 0.3;
+}
+.testimonial-items1 .text-pra {
+  font-size: 36px;
+  line-height: 133%;
+  margin-bottom: 36px;
+}
+.testimonial-items1 .quote-opa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 1399px) {
+  .testimonial-items1 .text-pra {
+    font-size: 24px;
+    line-height: 133%;
+    margin-bottom: 30px;
+  }
+  .testimonial-items1 .quote-opa {
+    width: 150px;
+  }
+}
+@media (max-width: 575px) {
+  .testimonial-items1 .text-pra {
+    font-size: 19px;
+    line-height: 133%;
+    margin-bottom: 22px;
+  }
+  .testimonial-items1 .quote-opa {
+    width: 150px;
+  }
+  .testimonial-items1 .quotes {
+    width: 30px;
+  }
+}
+
+.testimonial-btngrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.testimonial-btngrap .array-prev {
+  margin-left: -150px;
+}
+.testimonial-btngrap .array-next {
+  margin-right: -150px;
+}
+.testimonial-btngrap .common-slide-btn {
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--theme);
+}
+.testimonial-btngrap .common-slide-btn i {
+  font-size: 29px;
+  color: var(--black);
+}
+.testimonial-btngrap .common-slide-btn:hover {
+  background: var(--theme);
+}
+.testimonial-btngrap .common-slide-btn:hover i {
+  color: var(--black);
+}
+@media (max-width: 1600px) {
+  .testimonial-btngrap {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: initial;
+    gap: 16px;
+    top: 0;
+    transform: translateY(0);
+    margin-top: 40px;
+  }
+  .testimonial-btngrap .array-prev {
+    margin-left: 0px;
+  }
+  .testimonial-btngrap .array-next {
+    margin-right: 0px;
+  }
+  .testimonial-btngrap .common-slide-btn {
+    width: 60px;
+    height: 60px;
+  }
+  .testimonial-btngrap .common-slide-btn i {
+    font-size: 22px;
+  }
+}
+@media (max-width: 575px) {
+  .testimonial-btngrap {
+    margin-top: 20px;
+  }
+}
+
+.common-slide-btn {
+  transition: all 0.4s;
+}
+.common-slide-btn i {
+  transition: all 0.4s;
 }/*# sourceMappingURL=main.css.map */

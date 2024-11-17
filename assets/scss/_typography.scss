@@ -165,3 +165,18 @@ span {
 	align-items: center;
 	justify-content: center;
 }
+
+
+.fs-32{
+	font-size: 32px;
+	line-height: 132%;
+	@include breakpoint(max-xl){
+		font-size: 28px;
+	}
+	@include breakpoint(max-lg){
+		font-size: 24px;
+	}
+	@include breakpoint(max-md){
+		font-size: 22px;
+	}
+}

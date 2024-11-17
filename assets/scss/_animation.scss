@@ -40,7 +40,11 @@
 
 //>>>>> Circle Animation End <<<<<//
 
-
+@keyframes updowns {
+	50%{
+		transform: translateY(10px);
+	}
+}
 
 
 //>>>>> Preloader Animation Start <<<<<//

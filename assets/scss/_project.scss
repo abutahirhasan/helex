@@ -78,15 +78,128 @@
 //Stories Section
 
 //Luxuries Section
-.luxries-section{
+.luxries-section {
 	position: relative;
 	z-index: 1;
-	.luxuries-shape{
+	.luxuries-shape {
 		position: absolute;
 		top: 50%;
+		width: 100%;
 		left: 0;
 		transform: translateY(-50%);
 		z-index: -1;
+	}
+}
+.luxuries-wrap {
+	.luxuries-vid {
+		width: 150px;
+		height: 150px;
+		border: 1px solid $white;
+		z-index: 1;
+		i {
+			font-size: 28px;
+			color: $white;
+		}
+		&::before,
+		&::after {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			content: "";
+			border: 1px solid $white;
+			border-radius: 50%;
+		}
+		&::before {
+			transition: all 0.3s;
+			animation: scsl 2s linear infinite;
+		}
+		&::after {
+			transition: all 0.4s;
+			animation: scsl2 3s linear infinite;
+		}
+	}
+	&::before {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		content: "";
+		background: linear-gradient(
+			182deg,
+			rgba(0, 0, 0, 0) -86.27%,
+			rgba(0, 0, 0, 0.15) 98.22%
+		);
+	}
+	@keyframes scsl {
+		50% {
+			transform: scale(1.05);
+			opacity: 1;
+		}
+		60% {
+			transform: scale(1.09);
+			opacity: 0.6;
+		}
+		80% {
+			transform: scale(1.1);
+			opacity: 0.3;
+		}
+		90% {
+			transform: scale(1.2);
+			opacity: 0.2;
+		}
+		100% {
+			transform: scale(1.3);
+			opacity: 0;
+		}
+	}
+	@keyframes scsl2 {
+		50% {
+			transform: scale(1.05);
+			opacity: 1;
+		}
+		60% {
+			transform: scale(1.09);
+			opacity: 0.6;
+		}
+		80% {
+			transform: scale(1.1);
+			opacity: 0.3;
+		}
+		90% {
+			transform: scale(1.2);
+			opacity: 0.2;
+		}
+		100% {
+			transform: scale(1.3);
+			opacity: 0;
+		}
+	}
+	@include breakpoint(max-md) {
+		.luxuries-vid {
+			width: 90px;
+			height: 90px;
+			i {
+				font-size: 22px;
+			}
+		}
+		.mimg {
+			height: 350px;
+			object-fit: cover;
+		}
+	}
+	@include breakpoint(max-sm) {
+		.luxuries-vid {
+			width: 70px;
+			height: 70px;
+			i {
+				font-size: 22px;
+			}
+		}
+		.mimg {
+			height: 300px;
+			object-fit: cover;
+		}
 	}
 }
 .luxries-single-item {
@@ -104,6 +217,55 @@
 		.thumb {
 			img {
 				transform: scale(1.05);
+			}
+		}
+	}
+}
+.watching-information-wrap {
+	background: $white;
+	padding: 60px 16px;
+	border: 0.2px solid $theme-color;
+	box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.05);
+	margin-top: -180px;
+	z-index: 1;
+	position: relative;
+	.box {
+		p {
+			max-width: 550px;
+			margin: 0 auto;
+		}
+		form {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+			max-width: 470px;
+			margin: 0 auto;
+			input {
+				padding: 10px 14px 12px;
+				color: $white;
+				font-size: 16px;
+				background: $black;
+				width: 60%;
+				border: unset;
+				&::placeholder {
+					color: $white;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
+		margin-top: 60px;
+	}
+	@include breakpoint(max-sm) {
+		margin-top: 60px;
+		.box {
+			form {
+				input {
+					width: 100%;
+				}
+				flex-wrap: wrap;
+				gap: 14px;
 			}
 		}
 	}

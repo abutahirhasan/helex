@@ -175,8 +175,8 @@ CSS TABLE OF CONTENTS
 				// disableOnInteraction: false,
 			},
 			pagination: {
-				el: ".dots",
-				clickable: true,
+				el: ".swiper-pagination-cus",
+				type: "fraction",
 			},
 			navigation: {
 				nextEl: ".array-prev",

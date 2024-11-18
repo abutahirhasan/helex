@@ -111,9 +111,21 @@
 		transition: all 0.4s;
 	}
 }
+.swiper-pagination-total{
+	color: $black;
+}
 //Common Testimonial Btn
 
 //Apartment Testimonial
+.apartment-section{
+	.common-right{
+		@include breakpoint(max-xl){
+			img{
+				width: 30px;
+			}
+		}
+	}
+}
 .apartment-item {
 	position: relative;
 	display: flex;

@@ -2682,6 +2682,30 @@ span {
   }
 }
 
+.luxries-section {
+  position: relative;
+  z-index: 1;
+}
+.luxries-section .luxuries-shape {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.luxries-single-item .white-icon {
+  filter: brightness(0);
+  width: 26px;
+  height: 26px;
+}
+.luxries-single-item .thumb img {
+  transition: all 0.4s;
+}
+.luxries-single-item:hover .thumb img {
+  transform: scale(1.05);
+}
+
 .section-title {
   position: relative;
   z-index: 99;
@@ -2932,6 +2956,16 @@ span {
 }
 .common-slide-btn i {
   transition: all 0.4s;
+}
+
+.swiper-pagination-total {
+  color: var(--black);
+}
+
+@media (max-width: 1199px) {
+  .apartment-section .common-right img {
+    width: 30px;
+  }
 }
 
 .apartment-item {

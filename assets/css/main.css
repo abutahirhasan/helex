@@ -892,6 +892,120 @@ span {
   transform: translate(-50%, -50%);
 }
 
+.booking-info-area {
+  background: var(--white);
+  padding: 40px 60px;
+  max-width: 440px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 1399px) {
+  .booking-info-area {
+    padding: 30px 30px;
+  }
+}
+@media (max-width: 991px) {
+  .booking-info-area {
+    padding: 30px 30px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .booking-info-area {
+    padding: 24px 20px;
+    max-width: 100%;
+  }
+}
+
+.booking-form .book-form .input-area input {
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  background: #f2f2f2;
+  padding: 13px 16px 14px;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--text);
+}
+
+.book-flower1 {
+  position: absolute;
+  bottom: 110px;
+  left: 0;
+  animation: updowns 2s linear infinite;
+  z-index: -1;
+}
+
+.book-flower2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  animation: updowns 2s linear infinite;
+}
+
+.hotel-booking-content {
+  position: relative;
+}
+.hotel-booking-content .section-title {
+  max-width: 650px;
+}
+.hotel-booking-content .section-title h2 {
+  font-size: 40px;
+}
+.hotel-booking-content .booking-listing-inner {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.hotel-booking-content .booking-listing-inner .list li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.hotel-booking-content .booking-listing-inner .list li i {
+  font-size: 5px;
+  color: var(--black);
+}
+@media (max-width: 991px) {
+  .hotel-booking-content .section-title {
+    max-width: 650px;
+  }
+  .hotel-booking-content .section-title h2 {
+    font-size: 32px;
+  }
+  .hotel-booking-content .booking-listing-inner {
+    display: flex;
+    align-items: center;
+    gap: 7px 30px;
+    flex-wrap: wrap;
+  }
+  .hotel-booking-content .booking-listing-inner .list li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .hotel-booking-content .booking-listing-inner .list li i {
+    font-size: 5px;
+    color: var(--black);
+  }
+}
+.hotel-booking-content::before {
+  position: absolute;
+  right: 0;
+  bottom: -90px;
+  width: 975px;
+  height: 630px;
+  content: "";
+  background: #f8f6f2;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .hotel-booking-content::before {
+    display: none;
+  }
+}
+
 .custom-accordion {
   display: grid;
   gap: 30px;

@@ -1,24 +1,134 @@
-
-
 .vedio-area {
-    padding: 300px 0;
-    background-attachment: fixed;
-    position: relative;
+	padding: 300px 0;
+	background-attachment: fixed;
+	position: relative;
 }
 
 .play-btn {
-    .video-btn {
-        width: 160px;
-        height: 110px;
-        line-height: 110px;
-        text-align: center;
-        background-color: $white;
-        color: $header-color;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        font-size: 30px;
-        transform: translate(-50%,-50%);
-    }
+	.video-btn {
+		width: 160px;
+		height: 110px;
+		line-height: 110px;
+		text-align: center;
+		background-color: $white;
+		color: $header-color;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-size: 30px;
+		transform: translate(-50%, -50%);
+	}
 }
- 
+
+//Booking Area
+.booking-info-area {
+	background: $white;
+	padding: 40px 60px;
+	max-width: 440px;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.05);
+	@include breakpoint(max-xxl) {
+		padding: 30px 30px;
+	}
+	@include breakpoint(max-lg) {
+		padding: 30px 30px;
+		max-width: 100%;
+	}
+	@include breakpoint(max-sm) {
+		padding: 24px 20px;
+		max-width: 100%;
+	}
+}
+.booking-form {
+	.book-form {
+		.input-area {
+			input {
+				width: 100%;
+				border: 1px solid #e2e2e2;
+				background: #f2f2f2;
+				padding: 13px 16px 14px;
+				font-size: 14px;
+				line-height: 16px;
+				color: $text-color;
+			}
+		}
+	}
+}
+.book-flower1 {
+	position: absolute;
+	bottom: 110px;
+	left: 0;
+	animation: updowns 2s linear infinite;
+	z-index: -1;
+}
+.book-flower2 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
+	animation: updowns 2s linear infinite;
+}
+.hotel-booking-content {
+	.section-title {
+		max-width: 650px;
+		h2 {
+			font-size: 40px;
+		}
+	}
+	.booking-listing-inner {
+		display: flex;
+		align-items: center;
+		gap: 80px;
+		.list {
+			li {
+				display: flex;
+				align-items: center;
+				gap: 6px;
+				i {
+					font-size: 5px;
+					color: $black;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		.section-title {
+			max-width: 650px;
+			h2 {
+				font-size: 32px;
+			}
+		}
+		.booking-listing-inner {
+			display: flex;
+			align-items: center;
+			gap: 7px 30px;
+            flex-wrap: wrap;
+			.list {
+				li {
+					display: flex;
+					align-items: center;
+					gap: 6px;
+					i {
+						font-size: 5px;
+						color: $black;
+					}
+				}
+			}
+		}
+	}
+	position: relative;
+	&::before {
+		position: absolute;
+		right: 0;
+		bottom: -90px;
+		width: 975px;
+		height: 630px;
+		content: "";
+		background: #f8f6f2;
+		z-index: -1;
+		@include breakpoint(max-xl) {
+			display: none;
+		}
+	}
+}

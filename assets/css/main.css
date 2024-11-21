@@ -3418,4 +3418,28 @@ span {
     height: 350px;
     object-fit: cover;
   }
+}
+
+.testimonial-section2 .container {
+  max-width: 1703px;
+  margin: 0 auto;
+}
+.testimonial-section2 .testimonial-slider {
+  max-width: 1505px;
+}
+.testimonial-section2 .testimonial-slider .testimonial-items1 {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.testimonial-section2 .testimonial-slider .testimonial-items1 .content-area {
+  display: flex;
+  gap: 10px;
+}
+.testimonial-section2 .testimonial-slider .testimonial-items1 .content-area .quote1 {
+  margin-top: -30px;
+  width: 47px;
+  height: 47px;
+  object-fit: contain;
+  filter: brightness(25);
 }/*# sourceMappingURL=main.css.map */

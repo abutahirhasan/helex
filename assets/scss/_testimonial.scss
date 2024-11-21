@@ -232,3 +232,32 @@
 	}
 }
 //Apartment Testimonial
+
+
+//Testimonial Section2
+.testimonial-section2{
+	.container{
+		max-width: 1703px;
+		margin: 0 auto;
+	}
+	.testimonial-slider{
+		max-width: 1505px;
+		.testimonial-items1{
+			display: flex;
+			align-items: center;
+			gap: 80px;
+			.content-area{
+				display: flex;
+				gap: 10px;
+				.quote1{
+					margin-top: -30px;
+					width: 47px;
+					height: 47px;
+					object-fit: contain;
+					filter: brightness(25);
+				}
+			}
+		}
+	}
+}
+//Testimonial Section2

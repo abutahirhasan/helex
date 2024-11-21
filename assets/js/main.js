@@ -205,6 +205,40 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//>> city-slider-wrap Start <<//
+		const citySliderWrap = new Swiper(".city-slider-wrap", {
+			spaceBetween: 0,
+			speed: 2000,
+			loop: true,
+			autoplay: {
+				delay: 2000,
+			},
+			navigation: {
+				nextEl: ".array-prev",
+				prevEl: ".array-next",
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 3,
+				},
+				991: {
+					slidesPerView: 3,
+				},
+				767: {
+					slidesPerView: 3,
+				},
+				575: {
+					slidesPerView: 2,
+				},
+				400: {
+					slidesPerView: 2,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
+
 		//>> Brand Slider Start <<//
 		if ($(".brand-slider").length > 0) {
 			const brandSlider = new Swiper(".brand-slider", {

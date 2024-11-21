@@ -61,3 +61,67 @@
 	padding: 200px 16px 60px;
 }
 //Offer Section
+
+//City Content Area
+.city-view-content-wrap{
+	background: var(--bg4);
+	.city-view-content{
+		padding: 9px 20px;
+		max-width: 501px;
+		margin: 0 auto;
+		.theme-btn{
+			border: 1px solid $white;
+		}
+		@include breakpoint(max-xxl){
+			padding: 50px 20px;
+			max-width: 700px;
+			text-align: center;
+		}
+		@include breakpoint(max-sm){
+			.city-icon-inner{
+				li{
+
+					span{
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+//City Content Area
+
+//Facilites Section
+.facilites-wrap{
+	column-count: 6;
+	.facilites-item{
+		overflow: hidden;
+		border-radius: 12px;
+		transition: all 0.4s;
+		.facilites-bg{
+			width: 100%; 
+			border-radius: 12px;
+			transition: all 0.4s;
+			overflow: hidden;
+		}
+		.facilites-cont{
+			position: absolute;
+		}
+		&:hover{
+			transform: translateY(5px);
+			.facilites-bg{
+				transform: scale(1.1);
+			}
+		}
+	}
+	@include breakpoint(max-xl){
+		display: flex;
+		gap: 16px;
+		justify-content: center;
+		flex-wrap: wrap;
+		.facilites-item{
+
+		}
+	}
+}
+//Facilites Section

@@ -1168,6 +1168,62 @@ span {
   margin-bottom: 13px;
 }
 
+.city-view-content-wrap {
+  background: var(--bg4);
+}
+.city-view-content-wrap .city-view-content {
+  padding: 9px 20px;
+  max-width: 501px;
+  margin: 0 auto;
+}
+.city-view-content-wrap .city-view-content .theme-btn {
+  border: 1px solid var(--white);
+}
+@media (max-width: 1399px) {
+  .city-view-content-wrap .city-view-content {
+    padding: 50px 20px;
+    max-width: 700px;
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .city-view-content-wrap .city-view-content .city-icon-inner li span {
+    font-size: 14px;
+  }
+}
+
+.facilites-wrap {
+  column-count: 6;
+}
+.facilites-wrap .facilites-item {
+  overflow: hidden;
+  border-radius: 12px;
+  transition: all 0.4s;
+}
+.facilites-wrap .facilites-item .facilites-bg {
+  width: 100%;
+  border-radius: 12px;
+  transition: all 0.4s;
+  overflow: hidden;
+}
+.facilites-wrap .facilites-item .facilites-cont {
+  position: absolute;
+}
+.facilites-wrap .facilites-item:hover {
+  transform: translateY(5px);
+}
+.facilites-wrap .facilites-item:hover .facilites-bg {
+  transform: scale(1.1);
+}
+@media (max-width: 1199px) {
+  .facilites-wrap {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
 .footer-widget-wrapper {
   padding: 100px 0 80px;
 }

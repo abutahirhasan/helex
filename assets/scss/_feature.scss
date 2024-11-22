@@ -3,14 +3,14 @@
 	background: rgb(245, 178, 69, 0.4);
 	position: relative;
 	z-index: 1;
-    .offer-ele{
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        animation: updowns 10s linear infinite;
-        z-index: -1;
-    }
+	.offer-ele {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		animation: updowns 10s linear infinite;
+		z-index: -1;
+	}
 }
 .offer-single-item {
 	background: url(../../assets/img/blog/offer-thumb1.jpg) no-repeat center
@@ -63,25 +63,24 @@
 //Offer Section
 
 //City Content Area
-.city-view-content-wrap{
+.city-view-content-wrap {
 	background: var(--bg4);
-	.city-view-content{
+	.city-view-content {
 		padding: 9px 20px;
 		max-width: 501px;
 		margin: 0 auto;
-		.theme-btn{
+		.theme-btn {
 			border: 1px solid $white;
 		}
-		@include breakpoint(max-xxl){
+		@include breakpoint(max-xxl) {
 			padding: 50px 20px;
 			max-width: 700px;
 			text-align: center;
 		}
-		@include breakpoint(max-sm){
-			.city-icon-inner{
-				li{
-
-					span{
+		@include breakpoint(max-sm) {
+			.city-icon-inner {
+				li {
+					span {
 						font-size: 14px;
 					}
 				}
@@ -92,35 +91,34 @@
 //City Content Area
 
 //Facilites Section
-.facilites-wrap{
+.facilites-wrap {
 	column-count: 6;
-	.facilites-item{
+	.facilites-item {
 		overflow: hidden;
 		border-radius: 12px;
 		transition: all 0.4s;
-		.facilites-bg{
-			width: 100%; 
+		.facilites-bg {
+			width: 100%;
 			border-radius: 12px;
 			transition: all 0.4s;
 			overflow: hidden;
 		}
-		.facilites-cont{
+		.facilites-cont {
 			position: absolute;
 		}
-		&:hover{
+		&:hover {
 			transform: translateY(5px);
-			.facilites-bg{
+			.facilites-bg {
 				transform: scale(1.1);
 			}
 		}
 	}
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		display: flex;
 		gap: 16px;
 		justify-content: center;
 		flex-wrap: wrap;
-		.facilites-item{
-
+		.facilites-item {
 		}
 	}
 }

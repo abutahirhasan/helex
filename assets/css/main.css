@@ -3061,6 +3061,68 @@ span {
   }
 }
 
+.video-section.style2 .luxuries-wrap {
+  background: url(../../assets/img/global/vide-bg2.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+  position: relative;
+  padding: 450px 0;
+}
+.video-section.style2 .luxuries-wrap::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.219);
+}
+.video-section.style2 .luxuries-wrap .luxuries-vid {
+  width: 300px;
+  height: 300px;
+}
+.video-section.style2 .luxuries-wrap .luxuries-vid i {
+  font-size: 36px;
+}
+@media (max-width: 1399px) {
+  .video-section.style2 .luxuries-wrap {
+    padding: 350px;
+  }
+  .video-section.style2 .luxuries-wrap .luxuries-vid {
+    width: 250px;
+    height: 250px;
+  }
+  .video-section.style2 .luxuries-wrap .luxuries-vid i {
+    font-size: 36px;
+  }
+}
+@media (max-width: 991px) {
+  .video-section.style2 .luxuries-wrap {
+    padding: 250px 0;
+  }
+  .video-section.style2 .luxuries-wrap .luxuries-vid {
+    width: 120px;
+    height: 120px;
+  }
+  .video-section.style2 .luxuries-wrap .luxuries-vid i {
+    font-size: 22px;
+  }
+}
+@media (max-width: 575px) {
+  .video-section.style2 .luxuries-wrap {
+    padding: 190px 0;
+  }
+  .video-section.style2 .luxuries-wrap .luxuries-vid {
+    width: 120px;
+    height: 120px;
+  }
+  .video-section.style2 .luxuries-wrap .luxuries-vid i {
+    font-size: 22px;
+  }
+}
+
 .section-title {
   position: relative;
   z-index: 99;

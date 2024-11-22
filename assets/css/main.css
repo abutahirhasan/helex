@@ -493,6 +493,90 @@ span {
   z-index: -1;
 }
 
+.about-section2 {
+  z-index: 1;
+}
+.about-section2 .container {
+  max-width: 1424px;
+  margin: 0 auto;
+}
+.about-section2 .about-ele1 {
+  position: absolute;
+  right: -10px;
+  top: -70px;
+  z-index: -1;
+}
+.about-section2 .about-ele2 {
+  position: absolute;
+  bottom: 20px;
+  left: -50px;
+  z-index: -1;
+}
+
+.about-content2 {
+  z-index: 1;
+}
+.about-content2 .about-insurance-area {
+  display: flex;
+  gap: 70px;
+}
+.about-content2 .about-insurance-area .about-insurance-list .about-insurance-item .icon {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+}
+.about-content2 .about-insurance-area .about-insurance-list .about-insurance-item h4 {
+  text-wrap: nowrap;
+}
+.about-content2 .about-insurance-area .about-insurance-list .about-insurance-item p {
+  max-width: 140px;
+  line-height: 16px;
+}
+.about-content2 .about-insurance-area .about2-small-thumb {
+  width: 450px;
+  border-radius: 12px;
+}
+.about-content2 .about-insurance-area .about2-small-thumb img {
+  width: 100%;
+  border-radius: 12px;
+}
+@media (max-width: 1399px) {
+  .about-content2 .about-insurance-area {
+    gap: 24px;
+  }
+  .about-content2 .about-insurance-area .about-insurance-list .about-insurance-item .icon {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+  }
+  .about-content2 .about-insurance-area .about-insurance-list .about-insurance-item h4 {
+    text-wrap: nowrap;
+  }
+  .about-content2 .about-insurance-area .about-insurance-list .about-insurance-item p {
+    max-width: 140px;
+    line-height: 16px;
+  }
+  .about-content2 .about-insurance-area .about2-small-thumb {
+    width: 450px;
+    border-radius: 12px;
+  }
+  .about-content2 .about-insurance-area .about2-small-thumb img {
+    width: 100%;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .about-content2 .about-insurance-area {
+    flex-wrap: wrap;
+  }
+  .about-content2 .about-insurance-area .about2-small-thumb {
+    width: 100%;
+  }
+  .about-content2 .about-insurance-area .about2-small-thumb img {
+    width: 100%;
+  }
+}
+
 @-webkit-keyframes rippleOne {
   70% {
     -webkit-box-shadow: 0 0 0 40px rgba(244, 68, 56, 0);
@@ -2892,6 +2976,39 @@ span {
   transform: translateY(-50%);
   z-index: -1;
 }
+.luxries-section.style2 .luxries-single-item {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 4px solid var(--black);
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s;
+}
+.luxries-section.style2 .luxries-single-item .theme-custom {
+  color: var(--black);
+  background: transparent;
+  border: 1px solid var(--theme);
+}
+.luxries-section.style2 .luxries-single-item .theme-custom:hover {
+  color: var(--white);
+}
+.luxries-section.style2 .luxries-single-item .content {
+  padding: 24px 28px 30px;
+  z-index: -1;
+  position: relative;
+}
+.luxries-section.style2 .luxries-single-item .luxries-thumb-info {
+  width: 0%;
+  left: -50%;
+  transition: all 0.5s;
+}
+.luxries-section.style2 .luxries-single-item:hover {
+  border-color: var(--white);
+}
+.luxries-section.style2 .luxries-single-item:hover .luxries-thumb-info {
+  left: 0;
+  width: 100%;
+}
 
 .luxuries-wrap .luxuries-vid {
   width: 150px;
@@ -3059,6 +3176,44 @@ span {
   .watching-information-wrap .box form input {
     width: 100%;
   }
+}
+
+.luxries-thumb-info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.luxries-thumb-info .mimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.luxries-thumb-info .luxries-initial-arrow {
+  position: absolute;
+  z-index: 2;
+}
+.luxries-thumb-info .luxries-initial-arrow .luxries-arrow {
+  width: 45px;
+  height: 45px;
+  border: 1px solid var(--white);
+  border-radius: 8px;
+  margin: 0 auto 14px;
+}
+.luxries-thumb-info .luxries-initial-arrow .luxries-arrow:hover {
+  background: var(--theme);
+}
+.luxries-thumb-info::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  opacity: 0.69;
+  background: linear-gradient(180deg, rgba(28, 33, 12, 0.8) 0%, #1c210c 56.55%);
 }
 
 .video-section.style2 .luxuries-wrap {

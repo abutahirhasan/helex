@@ -103,7 +103,7 @@
 			display: flex;
 			align-items: center;
 			gap: 7px 30px;
-            flex-wrap: wrap;
+			flex-wrap: wrap;
 			.list {
 				li {
 					display: flex;
@@ -129,6 +129,187 @@
 		z-index: -1;
 		@include breakpoint(max-xl) {
 			display: none;
+		}
+	}
+}
+
+//resort-tabbing-area
+.resort-section {
+	.container {
+		max-width: 1455px;
+		margin: 0 auto;
+	}
+}
+.resort-tabbing-area {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+	.nav-item {
+		.nav-link {
+			padding: 10px 24px;
+			border: 1px solid $black;
+			font-size: 18px;
+			font-weight: 700;
+			color: $black;
+			text-align: center;
+			border-radius: 100px;
+			transition: all 0.4s;
+			&.active,
+			&:hover {
+				background: $theme-color-2;
+				color: $white;
+				border-color: $theme-color-2;
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
+		gap: 10px 16px;
+		.nav-item {
+			.nav-link {
+				padding: 8px 16px;
+				font-size: 16px;
+			}
+		}
+	}
+}
+.resort-map {
+	iframe {
+		width: 100%;
+		height: 720px;
+		@include breakpoint(max-md){
+			height: 500px;
+		}
+		@include breakpoint(max-sm){
+			height: 400px;
+		}
+		@include breakpoint(max-xs){
+			height: 300px;
+		}
+	}
+}
+.explore-resort-wrap {
+	display: grid;
+	gap: 20px;
+	.explore-resort-item {
+		padding: 14px 16px;
+		border: 1px solid $black;
+		border-radius: 100px;
+		display: inline-flex;
+		align-items: center;
+		gap: 30px;
+		.thumb {
+			border-radius: 100px;
+			img {
+				border-radius: 100px;
+			}
+		}
+		.content {
+			max-width: 242px;
+			p {
+				font-size: 14px;
+				line-height: 17px;
+				color: rgb(7, 10, 1, 0.7);
+			}
+		}
+	}
+	@include breakpoint(max-xxxl) {
+		gap: 16px;
+		.explore-resort-item {
+			padding: 14px 16px;
+			border: 1px solid $black;
+			border-radius: 100px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+			.thumb {
+				border-radius: 100px;
+				img {
+					border-radius: 100px;
+				}
+			}
+			.content {
+				max-width: 242px;
+				p {
+					font-size: 14px;
+					line-height: 17px;
+					color: rgb(7, 10, 1, 0.7);
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
+		gap: 16px;
+		.explore-resort-item {
+			padding: 14px 16px;
+			border: 1px solid $black;
+			border-radius: 100px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+			.thumb {
+				width: 98px;
+				min-width: 98px;
+				height: 98px;
+				border-radius: 50%;
+				img {
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+				}
+			}
+			.content {
+				max-width: 242px;
+				p {
+					font-size: 14px;
+					line-height: 17px;
+					color: rgb(7, 10, 1, 0.7);
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		gap: 16px;
+		.explore-resort-item {
+			padding: 24px 16px;
+			border: 1px solid $black;
+			border-radius: 50px;
+			flex-wrap: wrap;
+			display: grid;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+			text-align: center;
+			.thumb {
+				margin: 0 auto;
+				img {
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+				}
+			}
+			.theme-btn{
+				text-align: center;
+				justify-content: center;
+			}
+		}
+	}
+	@include breakpoint(max-lg){
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0;
+		.explore-resort-item{
+			width: calc(100% / 2);
+		}
+	}
+	@include breakpoint(max-xs){
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		.explore-resort-item{
+			width: calc(100% / 1);
 		}
 	}
 }

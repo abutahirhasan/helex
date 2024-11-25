@@ -29,6 +29,10 @@ Version: 1.0.0
   --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
 }
 
+.bg2 {
+  background: var(--bg2);
+}
+
 .bg3 {
   background: var(--bg3);
 }
@@ -186,6 +190,13 @@ Version: 1.0.0
   background-color: var(--header);
 }
 .theme-btn.header-bg::after, .theme-btn.header-bg::before {
+  background-color: var(--theme);
+}
+.theme-btn.extra-bg {
+  background-color: var(--bg);
+  color: var(--black);
+}
+.theme-btn.extra-bg::after, .theme-btn.extra-bg::before {
   background-color: var(--theme);
 }
 .theme-btn.bg-white {
@@ -1667,6 +1678,32 @@ span {
   .custom-accordion .accordion-item .accordion-body {
     padding: 0 0;
   }
+}
+.custom-accordion.white-version .line {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.custom-accordion.white-version .accordion-item {
+  border: unset;
+}
+.custom-accordion.white-version .accordion-item .accordion-header .accordion-button {
+  color: var(--white);
+}
+.custom-accordion.white-version .accordion-item .accordion-header .accordion-button::after {
+  background: var(--white);
+}
+.custom-accordion.white-version .accordion-item .accordion-header .accordion-button::before {
+  background: var(--white);
+}
+.custom-accordion.white-version .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: var(--white);
+}
+.custom-accordion.white-version .accordion-item .accordion-body {
+  padding: 0 0;
+}
+.custom-accordion.white-version .accordion-item .accordion-body p {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .offer-section {
@@ -3856,6 +3893,80 @@ span {
   .blog-single-item .view-more .icon {
     width: 36px;
     height: 36px;
+  }
+}
+
+.drinks-section .container {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+.drinks-section .drinks-head {
+  max-width: 765px;
+  margin: 0 auto -290px;
+}
+.drinks-section .drinks-head p {
+  max-width: 512px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Barlow", sans-serif;
+}
+@media (max-width: 1399px) {
+  .drinks-section .drinks-head {
+    max-width: 765px;
+    margin: 0 auto -190px;
+  }
+}
+@media (max-width: 991px) {
+  .drinks-section .drinks-head {
+    max-width: 765px;
+    margin: 0 auto -90px;
+  }
+}
+@media (max-width: 500px) {
+  .drinks-section .drinks-head {
+    max-width: 765px;
+    margin: 0 auto 30px;
+  }
+  .drinks-section .drink-all-thumb {
+    flex-wrap: wrap;
+  }
+}
+
+.drinks-items {
+  overflow: hidden;
+  transition: all 0.4s;
+  max-width: 465px;
+}
+.drinks-items img {
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.drinks-items:hover img {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 1500px) {
+  .drinks-items {
+    max-width: 400px;
+  }
+}
+@media (max-width: 1399px) {
+  .drinks-items {
+    max-width: 320px;
+  }
+}
+@media (max-width: 1199px) {
+  .drinks-items {
+    max-width: 280px;
+  }
+}
+@media (max-width: 991px) {
+  .drinks-items {
+    max-width: 280px;
+  }
+}
+@media (max-width: 500px) {
+  .drinks-items {
+    max-width: 100%;
   }
 }
 

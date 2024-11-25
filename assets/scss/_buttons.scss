@@ -68,6 +68,14 @@
 			background-color: $theme-color;
 		}
 	}
+	&.extra-bg {
+		background-color: $bg-color;
+        color: $black;
+		&::after,
+		&::before {
+			background-color: $theme-color;
+		}
+	}
 
 	&.bg-white {
 		background-color: $white;

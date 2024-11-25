@@ -85,5 +85,37 @@
 			}
 		}
 	}
+	&.white-version {
+		.line {
+			width: 100%;
+			height: 1px;
+			background: rgba(255, 255, 255, 0.1);
+		}
+		.accordion-item {
+			border: unset;
+			.accordion-header {
+				.accordion-button {
+					color: $white;
+				}
+				.accordion-button {
+					&::after {
+						background: $white;
+					}
+					&::before {
+						background: $white;
+					}
+				}
+				.accordion-button:not(.collapsed) {
+					color: $white;
+				}
+			}
+			.accordion-body {
+				padding: 0 0;
+				p{
+					color: rgb(255, 255, 255, 0.7);
+				}
+			}
+		}
+	}
 }
 //Faq Section

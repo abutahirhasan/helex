@@ -38,6 +38,7 @@ $border-color: var(--border);
 $body-bg: var(--body-bg);
 $bg-color: var(--bg);
 $shadow: var(--box-shadow);
+$bg2: var(--bg2);
 $bg3: var(--bg3);
 $bg4: var(--bg4);
 $bg5: var(--bg5);
@@ -46,7 +47,9 @@ $bg5: var(--bg5);
 
 
 //Default Color Custom
-
+.bg2{
+    background: $bg2;
+}
 .bg3{
     background: $bg3;
 }

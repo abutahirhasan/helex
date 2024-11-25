@@ -34,6 +34,27 @@
 			}
 		}
 	}
+	&.style3{
+		background: $white;
+		.located{
+			font-weight: 500;
+			color: rgb(7, 10, 1, 0.9);
+			i{
+				color: $black;
+				opacity: 1;
+			}
+		}
+		.contact-list{
+			li{
+				i{
+					color: $black;
+				}
+				a{
+					color: rgb(7, 10, 1, 0.9);
+				}
+			}
+		}
+	}
 }
 
 //>>>>> Header Main Area Start <<<<<//
@@ -328,6 +349,9 @@
 	width: 100%;
 	z-index: 9;
 	background: rgb(245, 178, 69, 0.05);
+	&.style3{
+		background: rgb(255, 255, 255, 0.07);
+	}
 	.container{
 		max-width: 1710px;
 		margin: 0 auto

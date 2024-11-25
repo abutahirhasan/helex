@@ -12,8 +12,8 @@
 	font-size: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
-	line-height: 1;
-	padding: 17px 36px 19px;
+    line-height: 22px;
+	padding: 15px 36px 17px;
 	overflow: hidden;
 	align-items: center;
 	font-family: "Expose", sans-serif;
@@ -84,7 +84,7 @@
 	}
 
 	@include breakpoint(max-sm) {
-		padding: 18px 30px;
+		padding: 14px 30px;
 		font-size: 14px;
 	}
 }

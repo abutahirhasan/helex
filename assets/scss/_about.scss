@@ -151,3 +151,24 @@
 	}
 }
 //About Section2
+
+//About Section3
+.about-section3{
+	z-index: 1;
+	.about-birds-left{
+		position: absolute;
+		top: 144px;
+		left: 0;
+		animation: updowns 2s linear infinite;
+	}
+	.about-shadow-right{
+		position: absolute;
+		right: 0;
+		bottom: 120px;
+		z-index: -1;
+		@include breakpoint(max-xl){
+			opacity: 0.4;
+		}
+	}
+}
+//About Section3

@@ -328,53 +328,163 @@
 	transition: all 0.4s;
 	border-radius: 40px;
 	overflow: hidden;
-	.boxes{
+	.boxes {
 		padding: 20px 40px 30px;
 	}
-	.blog-admin{
+	.blog-admin {
 		background: $black;
 		border-radius: 100px;
 		padding: 12px 20px;
 		max-width: 270px;
 		margin: -20px auto 0 auto;
 		position: relative;
-		li{
+		li {
 			color: $white;
 			font-weight: 400;
-			img{
+			img {
 				width: 16px;
 				object-fit: contain;
 				filter: brightness(25);
 			}
 		}
 	}
-	p{
+	p {
 		font-size: 16px;
 		color: $black;
 		line-height: 22px;
 	}
-	.theme-btn{
+	.theme-btn {
 		color: $black !important;
 		background: $white !important;
 		border-radius: 100px;
 		border: 1px solid $black;
-		&:hover{
+		&:hover {
 			background: $theme-color !important;
 			color: $white !important;
 		}
 	}
-	&:hover{
+	&:hover {
 		transform: translateY(5px);
-		h3{
-			a{
+		h3 {
+			a {
 				color: $theme-color-2;
 			}
 		}
 	}
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		border-radius: 24px;
-		.boxes{
+		.boxes {
 			padding: 18px 18px 24px;
 		}
 	}
 }
+
+//Off-section
+.off-section {
+	position: relative;
+	.off-items {
+		transition: all 0.4s;
+		overflow: hidden;
+		display: block;
+		border-radius: 32px;
+		img {
+			transition: all 0.4s;
+			overflow: hidden;
+		}
+		&:hover {
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+	.off-birds {
+		position: absolute;
+		top: 210px;
+		right: 10px;
+		animation: updowns 2s linear infinite;
+	}
+	.off-birds2 {
+		position: absolute;
+		left: 0;
+		width: 150px;
+		top: 320px;
+		animation: updowns 2s linear infinite;
+	}
+}
+
+//Off Information Section
+.offinfo-section {
+	background: rgb(0, 119, 177, 0.05);
+	position: relative;
+	.testimonial-offbtn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 1;
+		button {
+			width: 80px;
+			height: 80px;
+			border: 1px solid $white;
+			transition: all 0.4s;
+			i{
+				color: $white;
+				font-size: 24px;
+			}
+			&:hover {
+				border-color: $theme-color-2;
+				background: $theme-color-2;
+			}
+			@include breakpoint(max-lg){
+				width: 55px;
+				height: 55px;
+			}
+		}
+	}
+}
+.off-info-items {
+	.off-info-content {
+		width: 120px;
+		height: 120px;
+		min-width: 120px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 24px;
+		color: $black;
+		text-align: center;
+		transition: all 0.4s;
+		opacity: 0;
+		transform: scale(0);
+		&:hover {
+			.off-info-content {
+				background: $theme-color-2;
+				color: $white;
+			}
+		}
+	}
+	&:hover {
+		.off-info-content {
+			background: $white;
+			color: $black;
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+}
+.about3-listing{
+	.about-insurance-item{
+		.icon{
+			border: 1px solid rgb(7, 10, 1, 0.1);
+			width: 40px;
+			height: 40px;
+			img{
+				width: 22px;
+				object-fit: contain;
+			}
+		}
+	}
+}
+//Off Information Section

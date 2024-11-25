@@ -205,6 +205,46 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//>> Offinfo Slider Start <<//
+		const offinformationSlider = new Swiper(".offinformation-slider", {
+			spaceBetween: 24,
+			speed: 2000,
+			loop: true,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2000,
+				// disableOnInteraction: false,
+			},
+			pagination: {
+				el: ".swiper-pagination-cus",
+				type: "fraction",
+			},
+			navigation: {
+				nextEl: ".array-prev",
+				prevEl: ".array-next",
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 3.8,
+				},
+				991: {
+					slidesPerView: 2.2,
+				},
+				767: {
+					slidesPerView: 1.5,
+				},
+				575: {
+					slidesPerView: 1.4,
+				},
+				400: {
+					slidesPerView: 1.2,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
+
 		//>> city-slider-wrap Start <<//
 		const citySliderWrap = new Swiper(".city-slider-wrap", {
 			spaceBetween: 0,

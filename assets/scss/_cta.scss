@@ -426,7 +426,7 @@
 			height: 80px;
 			border: 1px solid $white;
 			transition: all 0.4s;
-			i{
+			i {
 				color: $white;
 				font-size: 24px;
 			}
@@ -434,7 +434,7 @@
 				border-color: $theme-color-2;
 				background: $theme-color-2;
 			}
-			@include breakpoint(max-lg){
+			@include breakpoint(max-lg) {
 				width: 55px;
 				height: 55px;
 			}
@@ -474,13 +474,13 @@
 		}
 	}
 }
-.about3-listing{
-	.about-insurance-item{
-		.icon{
+.about3-listing {
+	.about-insurance-item {
+		.icon {
 			border: 1px solid rgb(7, 10, 1, 0.1);
 			width: 40px;
 			height: 40px;
-			img{
+			img {
 				width: 22px;
 				object-fit: contain;
 			}
@@ -488,3 +488,96 @@
 	}
 }
 //Off Information Section
+
+//Custom Date Picker
+.datepicker-section {
+	background: $white;
+	padding: 60px 0;
+	margin: 0px 0 30px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	.container {
+		max-width: 1624px;
+		margin: 0 auto;
+	}
+	@include breakpoint(max-xxl) {
+		padding: 40px 0;
+	}
+}
+.date-picker-container {
+	.form-group {
+		text-align: left;
+		width: 320px;
+		input {
+			border-radius: 100px !important;
+			border: 1px solid #e2e2e2;
+			background: #f2f2f2;
+			color: #353844;
+			padding: 5px 16px;
+		}
+		input[type="date"]::-webkit-calendar-picker-indicator {
+			cursor: pointer;
+			border-radius: 4px;
+			margin-right: 2px;
+			opacity: 0.5;
+		}
+		.nice-select {
+			border-radius: 100px !important;
+			border: 1px solid #e2e2e2;
+			background: #f2f2f2;
+			color: $text-color;
+			padding: 9px 16px;
+			.current {
+				color: #353844 !important;
+				font-size: 14px;
+			}
+			.list {
+				background: $white;
+				li {
+					border-color: #e2e2e2;
+					color: #353844;
+					font-size: 14px;
+					font-weight: 400;
+					padding: 4px 10px;
+				}
+			}
+			&::after {
+				right: 20px;
+				top: 22px;
+				border-color: $text-color;
+			}
+		}
+	}
+	.theme-btn {
+		padding: 12px 20px !important;
+		width: 224px;
+	}
+
+	label {
+		font-size: 16px;
+		font-weight: bold;
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	input[type="date"],
+	select {
+		width: 100%;
+		padding: 10px;
+		font-size: 16px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+	}
+
+	select {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	@include breakpoint(max-xxl) {
+		.theme-btn {
+			padding: 12px 20px !important;
+			width: 200px;
+		}
+	}
+}
+//Custom Date Picker

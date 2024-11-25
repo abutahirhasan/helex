@@ -1492,6 +1492,95 @@ span {
   object-fit: contain;
 }
 
+.datepicker-section {
+  background: var(--white);
+  padding: 60px 0;
+  margin: 0px 0 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.datepicker-section .container {
+  max-width: 1624px;
+  margin: 0 auto;
+}
+@media (max-width: 1399px) {
+  .datepicker-section {
+    padding: 40px 0;
+  }
+}
+
+.date-picker-container .form-group {
+  text-align: left;
+  width: 320px;
+}
+.date-picker-container .form-group input {
+  border-radius: 100px !important;
+  border: 1px solid #e2e2e2;
+  background: #f2f2f2;
+  color: #353844;
+  padding: 5px 16px;
+}
+.date-picker-container .form-group input[type=date]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+  opacity: 0.5;
+}
+.date-picker-container .form-group .nice-select {
+  border-radius: 100px !important;
+  border: 1px solid #e2e2e2;
+  background: #f2f2f2;
+  color: var(--text);
+  padding: 9px 16px;
+}
+.date-picker-container .form-group .nice-select .current {
+  color: #353844 !important;
+  font-size: 14px;
+}
+.date-picker-container .form-group .nice-select .list {
+  background: var(--white);
+}
+.date-picker-container .form-group .nice-select .list li {
+  border-color: #e2e2e2;
+  color: #353844;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px 10px;
+}
+.date-picker-container .form-group .nice-select::after {
+  right: 20px;
+  top: 22px;
+  border-color: var(--text);
+}
+.date-picker-container .theme-btn {
+  padding: 12px 20px !important;
+  width: 224px;
+}
+.date-picker-container label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+.date-picker-container input[type=date],
+.date-picker-container select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.date-picker-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+@media (max-width: 1399px) {
+  .date-picker-container .theme-btn {
+    padding: 12px 20px !important;
+    width: 200px;
+  }
+}
+
 .custom-accordion {
   display: grid;
   gap: 30px;

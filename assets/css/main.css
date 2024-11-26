@@ -4762,6 +4762,24 @@ span {
   max-width: 1703px;
   margin: 0 auto;
 }
+.testimonial-section2.testimonial-style3 .testimonil-spce-wrapper2 .testimonial-slider .testimonial-items1 p {
+  color: var(--black) !important;
+}
+.testimonial-section2.testimonial-style3 .testimonil-spce-wrapper2 .testimonial-slider .testimonial-items1 .quote1 {
+  filter: brightness(0);
+}
+.testimonial-section2.testimonial-style3 .testimonil-spce-wrapper2 .testimonial-btngrap2 button {
+  border-color: var(--black);
+}
+.testimonial-section2.testimonial-style3 .testimonil-spce-wrapper2 .testimonial-btngrap2 button i {
+  color: var(--black);
+}
+.testimonial-section2.testimonial-style3 .testimonil-spce-wrapper2 .testimonial-btngrap2 button:hover {
+  border-color: var(--theme);
+}
+.testimonial-section2.testimonial-style3 .testimonil-spce-wrapper2 .testimonial-btngrap2 button:hover i {
+  color: var(--white);
+}
 .testimonial-section2 .testimonial-slider {
   max-width: 1405px;
   margin-left: auto;

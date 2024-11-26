@@ -239,6 +239,34 @@
 		max-width: 1703px;
 		margin: 0 auto;
 	}
+	&.testimonial-style3{
+		.testimonil-spce-wrapper2{
+			.testimonial-slider{
+				.testimonial-items1{
+					p{
+						color: $black !important;
+					}
+					.quote1{
+						filter: brightness(0);
+					}
+				}
+			}
+			.testimonial-btngrap2{
+				button{
+					border-color: $black;
+					i{
+						color: $black;
+					}
+					&:hover{
+						border-color: $theme-color;
+						i{
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
 	.testimonial-slider {
 		max-width: 1405px;
 		margin-left: auto;

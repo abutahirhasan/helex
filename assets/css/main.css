@@ -4575,6 +4575,49 @@ span {
   }
 }
 
+.dining-room-section .room-head-area .drink-dining-pra {
+  max-width: 349px;
+}
+
+.offer-room-item {
+  z-index: 1;
+}
+.offer-room-item .content {
+  position: absolute;
+}
+.offer-room-item .content .offer-title {
+  background: var(--white);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  padding: 21px 5px 0;
+  text-align: center;
+  margin: 0 auto 14px;
+}
+.offer-room-item .content .offer-title span {
+  line-height: 14px;
+}
+.offer-room-item .content .theme-btn {
+  border: 1px solid var(--white);
+}
+.offer-room-item .content .theme-btn:hover {
+  border-color: var(--theme);
+  color: var(--black);
+}
+.offer-room-item::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-radius: 15px;
+  background: radial-gradient(51.84% 51.84% at 50% 51.84%, rgba(0, 0, 0, 0.7) 34.5%, rgba(0, 0, 0, 0.9) 78.5%);
+}
+.offer-room-item:hover .content .offer-title {
+  background: var(--bg);
+}
+
 .testimonial-items1 {
   position: relative;
 }

@@ -397,6 +397,9 @@ br {
 .fs-20{
 	font-size: 20px;
 	line-height: 32px;
+	@include breakpoint(max-lg){
+		font-size: 18px;
+	}
 }
 
 //Default Font Weight

@@ -141,7 +141,7 @@
     </div>
 
     <!-- Header Section Start -->
-    <header id="header-sticky" class="header-1 style3 white-variation">
+    <header id="header-sticky" class="header-1 bg-transparent white-variation">
         <div class="container">
             <div class="mega-menu-wrapper">
                 <div class="header-main">
@@ -272,78 +272,67 @@
         </div>
     </header>
 
+
     <!-- Hero section start -->
-    <section class="hero-section3 fix">
-        <div class="container">
-            <div
-                class="hero-wrapper3 d-lg-flex d-grid flex-lg-nowrap flex-wrap gap-4 align-items-center justify-content-lg-between justify-content-center">
-                <div class="hero-content3">
-                    <span class="sub-font sub-title text-white fs-20 mb-md-4 mb-3 d-block">
-                        Explore New Experiences
-                    </span>
-                    <h2 class="mb-md-5 mb-4 white-clr fw-semibold">
-                        Discover Chaos <br>
-                        Your Secluded Beach <br> Resort Retreat
-                    </h2>
-                    <div class="hero-btn-adjust d-flex gap-sm-4 gap-3">
-                        <a href="#" class="theme-btn bg-white rounded-5 fw-normal text-capitalize gap-1 px-6">
-                            Book Now
-                        </a>
-                        <a href="#" class="room-arrow-btn">
-                            <img src="assets/img/icon/right-arrow.png" alt="img" class="right-arrow"> View
-                            Room
-                        </a>
+    <section class="hero-section hero-style4">
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="hero-1">
+                        <div class="hero-bg bg-cover" style="background-image: url(assets/img/hero/hero-bg4.jpg);">
+                        </div>
+                        <div class="container">
+                            <div class="hero-content">
+                                <span class="sub-font text-white sub-title fs-20 mb-sm-4 mb-3 d-block">
+                                    Authentic historical charm
+                                </span>
+                                <h1 class="mb-lg-5 mb-4 pb-lg-0 pb-2 text-capitalize white-clr fw-bold">
+                                    Start A New Vision OF comport Zone
+                                </h1>
+
+                            </div>
+                            <div class="date-picker-container">
+                                <form id="booking-form"
+                                    class="d-flex flex-lg-nowrap justify-content-lg-between justify-content-center flex-wrap align-items-end gap-xxl-4 gap-xl-3 gap-2">
+                                    <div class="form-group">
+                                        <label for="check-in" class="black2-clr fs-14 fw-500 mb-2 d-block">Check In:</label>
+                                        <input type="date" id="check-in" name="check-in">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="check-in" class="black2-clr fs-14 fw-500 mb-2 d-block">check-out:</label>
+                                        <input type="date" id="check-out" name="check-out">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="adults" class="black2-clr fs-14 fw-500 mb-2 d-block">Guest:</label>
+                                        <select id="adults" name="adults">
+                                            <option value="1">Adult:</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit"
+                                            class="theme-btn text-nowrap d-center rounded-4 fs-16 fw-500 text-center gap-2 text-capitalize">
+                                            Search <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="hero-slide-btn">
+                            <button type="button" class="common-slide-btn d-center array-prev">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                            <button type="button" class="common-slide-btn d-center array-next">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <a href="https://www.youtube.com/watch?v=lMJImKo-eZU"
-                    class="hero-vid luxuries-vid position-relative rounded-circle d-center popup-video">
-                    <span class="icon d-center">
-                        <i class="fa-solid fa-play"></i>
-                    </span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Custom Datepicket section start -->
-    <section class="datepicker-section fix">
-        <div class="container">
-            <div class="date-picker-container">
-                <form id="booking-form"
-                    class="d-flex flex-lg-nowrap justify-content-lg-between justify-content-center flex-wrap align-items-center gap-xxl-4 gap-xl-3 gap-2">
-                    <div class="form-group">
-                        <input type="date" id="check-in" name="check-in">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="date" id="check-out" name="check-out">
-                    </div>
-
-                    <div class="form-group">
-                        <select id="adults" name="adults">
-                            <option value="1">Adult:</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <select id="children" name="children">
-                            <option value="0">Children</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
-
-                    <button type="submit"
-                        class="theme-btn text-nowrap d-center rounded-5 header-bg fs-16 fw-500 text-center text-capitalize">
-                        Check Availability
-                    </button>
-                </form>
             </div>
         </div>
     </section>

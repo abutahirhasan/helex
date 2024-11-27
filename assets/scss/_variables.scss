@@ -3,6 +3,7 @@
     
     --body: #fff;
     --black: #070A01;
+    --black2: #353844;
     --white: #fff;
     --theme: #F5B245;
     --theme2: #0077B1;
@@ -25,6 +26,7 @@
 
 // Theme Color - Defualt Colors
 $black: var(--black);
+$black2: var(--black2);
 $white: var(--white);
 $theme-color: var(--theme);
 $theme-color-2: var(--theme2);
@@ -61,6 +63,9 @@ $bg5: var(--bg5);
 }
 .black-clr{
     color: $black;
+}
+.black2-clr{
+    color: $black2;
 }
 .black-bg{
     background: $black;

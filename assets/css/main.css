@@ -10,6 +10,7 @@ Version: 1.0.0
 :root {
   --body: #fff;
   --black: #070A01;
+  --black2: #353844;
   --white: #fff;
   --theme: #F5B245;
   --theme2: #0077B1;
@@ -47,6 +48,10 @@ Version: 1.0.0
 
 .black-clr {
   color: var(--black);
+}
+
+.black2-clr {
+  color: var(--black2);
 }
 
 .black-bg {
@@ -3445,6 +3450,173 @@ span {
 @media (max-width: 575px) {
   .hero-section.hero-style2 .hero-1 .hero-slide-btn {
     bottom: 10px !important;
+  }
+}
+.hero-section.hero-style4 .hero-1 {
+  padding: 270px 0 210px;
+}
+.hero-section.hero-style4 .hero-bg::before {
+  background: rgba(0, 0, 0, 0.664);
+}
+.hero-section.hero-style4 .hero-content {
+  max-width: 739px;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+.hero-section.hero-style4 .hero-content h1 {
+  font-size: 60px;
+}
+.hero-section.hero-style4 .hero-slide-btn button {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  background: transparent;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+.hero-section.hero-style4 .hero-slide-btn button i {
+  font-size: 26px;
+  color: var(--white);
+}
+.hero-section.hero-style4 .hero-slide-btn button:hover {
+  border-color: var(--theme);
+}
+.hero-section.hero-style4 .hero-slide-btn .array-prev {
+  margin-left: 60px;
+}
+.hero-section.hero-style4 .hero-slide-btn .array-next {
+  margin-right: 60px;
+}
+.hero-section.hero-style4 .date-picker-container {
+  max-width: 999px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 30px 30px;
+  z-index: 1;
+  position: relative;
+}
+.hero-section.hero-style4 .date-picker-container form .form-group {
+  position: relative;
+  z-index: 1;
+}
+.hero-section.hero-style4 .date-picker-container form .form-group input,
+.hero-section.hero-style4 .date-picker-container form .form-group .nice-select {
+  border-radius: 16px !important;
+}
+.hero-section.hero-style4 .date-picker-container form .theme-btn {
+  background: #f9dabb;
+  color: var(--black);
+  width: 100%;
+}
+.hero-section.hero-style4 .date-picker-container form .theme-btn i {
+  color: var(--black);
+  font-size: 14px;
+}
+.hero-section.hero-style4 .date-picker-container form .theme-btn:hover {
+  color: var(--white);
+}
+.hero-section.hero-style4 .date-picker-container form .theme-btn:hover i {
+  color: var(--white);
+}
+@media (max-width: 991px) {
+  .hero-section.hero-style4 .date-picker-container form .form-group {
+    width: 47.5%;
+  }
+}
+@media (max-width: 500px) {
+  .hero-section.hero-style4 .date-picker-container form .form-group {
+    width: 95%;
+  }
+}
+@media (max-width: 1399px) {
+  .hero-section.hero-style4 .hero-1 {
+    padding: 200px 0 190px;
+  }
+}
+@media (max-width: 1199px) {
+  .hero-section.hero-style4 .hero-1 {
+    padding: 150px 0 150px;
+  }
+  .hero-section.hero-style4 .hero-slide-btn button {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+  .hero-section.hero-style4 .hero-slide-btn button i {
+    font-size: 18px;
+  }
+  .hero-section.hero-style4 .hero-slide-btn .array-prev {
+    margin-left: 10px;
+  }
+  .hero-section.hero-style4 .hero-slide-btn .array-next {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .hero-section.hero-style4 .hero-1 {
+    padding: 130px 0 100px;
+  }
+  .hero-section.hero-style4 .hero-content {
+    margin: 0 auto 40px;
+  }
+  .hero-section.hero-style4 .hero-content h1 {
+    font-size: 48px;
+  }
+  .hero-section.hero-style4 .hero-slide-btn {
+    position: initial;
+    width: initial;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 80px;
+  }
+  .hero-section.hero-style4 .hero-slide-btn button {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+  .hero-section.hero-style4 .hero-slide-btn button i {
+    font-size: 18px;
+  }
+  .hero-section.hero-style4 .hero-slide-btn .array-prev {
+    margin-left: 10px;
+  }
+  .hero-section.hero-style4 .hero-slide-btn .array-next {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-section.hero-style4 .hero-1 {
+    padding: 130px 0 90px;
+  }
+  .hero-section.hero-style4 .hero-content h1 {
+    font-size: 38px;
+  }
+  .hero-section.hero-style4 .hero-slide-btn {
+    position: initial;
+    width: initial;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .hero-section.hero-style4 .hero-1 {
+    padding: 130px 0 90px;
+  }
+  .hero-section.hero-style4 .hero-content {
+    margin: 0 auto 24px;
+  }
+  .hero-section.hero-style4 .hero-content h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .hero-section.hero-style4 .hero-slide-btn {
+    position: initial;
+    width: initial;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 60px;
   }
 }
 

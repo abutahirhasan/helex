@@ -118,8 +118,21 @@
 		gap: 16px;
 		justify-content: center;
 		flex-wrap: wrap;
-		.facilites-item {
-		}
 	}
 }
 //Facilites Section
+
+
+//Facilites Section4
+.facileties-section4{
+	.facilites-wrap{
+		.facilites-cont{
+			img{
+				filter: brightness(0);
+			}
+			span{
+				
+			}
+		}
+	}
+}

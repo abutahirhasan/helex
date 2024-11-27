@@ -76,7 +76,7 @@
 		top: -70px;
 		z-index: -1;
 	}
-	.about-ele2{
+	.about-ele2 {
 		position: absolute;
 		bottom: 20px;
 		left: -50px;
@@ -153,22 +153,65 @@
 //About Section2
 
 //About Section3
-.about-section3{
+.about-section3 {
 	z-index: 1;
-	.about-birds-left{
+	.about-birds-left {
 		position: absolute;
 		top: 144px;
 		left: 0;
 		animation: updowns 2s linear infinite;
 	}
-	.about-shadow-right{
+	.about-shadow-right {
 		position: absolute;
 		right: 0;
 		bottom: 120px;
 		z-index: -1;
-		@include breakpoint(max-xl){
+		@include breakpoint(max-xl) {
 			opacity: 0.4;
 		}
 	}
 }
 //About Section3
+
+//About Section 4
+.about-wrapper4 {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	justify-content: space-between;
+	.about-content-version3 {
+		max-width: 530px;
+		.theme-btn{
+			background: $bg-color;
+			color: $black;
+			&:hover{
+				color: $white;
+			}
+		}
+	}
+	.line{
+		width: 2px;
+		height: 400px;
+		background: #D9D9D9;
+	}
+	.about-thumbv4 {
+		max-width: 520px;
+		img{
+			width: 100%;
+		}
+	}
+	@include breakpoint(max-lg){
+		flex-wrap: wrap;
+		.line{
+			display: none;
+		}
+		.about-thumbv4{
+			margin: 0 auto;
+		}
+		.about-content-version3{
+			order: 1;
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+}

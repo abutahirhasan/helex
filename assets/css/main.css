@@ -4530,6 +4530,51 @@ span {
   transform: scale(1.04);
 }
 
+.aprtment-rooms4 .apartment-cont {
+  background: var(--white) !important;
+}
+.aprtment-rooms4 .apartment-cont .theme-btn {
+  border: 1px solid var(--black) !important;
+  color: var(--black);
+}
+.aprtment-rooms4 .apartment-cont .theme-btn:hover {
+  color: var(--white);
+}
+.aprtment-rooms4 .apartment-cont .apartment-cont-inner .invirment li {
+  font-size: 20px;
+  font-weight: 500;
+}
+.aprtment-rooms4 .apartment-cont .apartment-cont-inner .invirment li img {
+  filter: brightness(0);
+}
+.aprtment-rooms4.aprtment-rooms-small .apartment-cont {
+  width: 94%;
+  bottom: 18px;
+}
+.aprtment-rooms4.aprtment-rooms-small .apartment-cont .theme-btn {
+  font-size: 14px;
+  text-wrap: nowrap;
+}
+.aprtment-rooms4.aprtment-rooms-small .apartment-cont .apartment-cont-inner .invirment li {
+  font-weight: 500;
+}
+.aprtment-rooms4.aprtment-rooms-small .apartment-cont .apartment-cont-inner .invirment li span {
+  font-size: 12px;
+}
+.aprtment-rooms4.aprtment-rooms-small .apartment-cont .apartment-cont-inner .invirment li img {
+  width: 18px;
+  filter: brightness(0);
+}
+@media (max-width: 991px) {
+  .aprtment-rooms4 {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: grid !important;
+  }
+  .aprtment-rooms4 .apartment-cont {
+    position: initial !important;
+  }
+}
+
 .testimonial-items1 {
   position: relative;
 }

@@ -1,0 +1,56 @@
+//Rooms Section
+.aprtment-rooms4 {
+	.apartment-cont {
+		background: $white !important;
+		.theme-btn {
+			border: 1px solid $black !important;
+			color: $black;
+			&:hover {
+				color: $white;
+			}
+		}
+		.apartment-cont-inner {
+			.invirment {
+				li {
+					font-size: 20px;
+					font-weight: 500;
+					img {
+						filter: brightness(0);
+					}
+				}
+			}
+		}
+	}
+	&.aprtment-rooms-small {
+		.apartment-cont {
+			width: 94%;
+            bottom: 18px;
+			.theme-btn {
+				font-size: 14px;
+                text-wrap: nowrap;
+			}
+			.apartment-cont-inner {
+				.invirment {
+					li {
+						span{
+                            font-size: 12px;
+                        }
+						font-weight: 500;
+						img {
+                            width: 18px;
+							filter: brightness(0);
+						}
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+		display: grid !important;
+		.apartment-cont {
+			position: initial !important;
+		}
+	}
+}
+//Rooms Section

@@ -61,6 +61,14 @@
 		}
 	}
 
+	&.theme3-btn {
+		background-color: $theme-color-3;
+		&::after,
+		&::before {
+			background-color: $theme-color;
+		}
+	}
+
 	&.header-bg {
 		background-color: $header-color;
 		&::after,

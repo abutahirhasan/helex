@@ -181,37 +181,98 @@
 	justify-content: space-between;
 	.about-content-version3 {
 		max-width: 530px;
-		.theme-btn{
+		.theme-btn {
 			background: $bg-color;
 			color: $black;
-			&:hover{
+			&:hover {
 				color: $white;
 			}
 		}
 	}
-	.line{
+	.line {
 		width: 2px;
 		height: 400px;
-		background: #D9D9D9;
+		background: #d9d9d9;
 	}
 	.about-thumbv4 {
 		max-width: 520px;
-		img{
+		img {
 			width: 100%;
 		}
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		flex-wrap: wrap;
-		.line{
+		.line {
 			display: none;
 		}
-		.about-thumbv4{
+		.about-thumbv4 {
 			margin: 0 auto;
 		}
-		.about-content-version3{
+		.about-content-version3 {
 			order: 1;
 			text-align: center;
 			margin: 0 auto;
+		}
+	}
+}
+
+//Suit Facilites
+.suit-facilites-section {
+	background: #091018;
+	padding-bottom: 120px;
+}
+.suit-facilites-thumb-inner {
+	.thumb-big2 {
+		position: absolute;
+		bottom: -120px;
+		right: 0;
+		.luxuries-vid {
+			width: 55px;
+			height: 55px;
+			background: $white;
+			i {
+				color: $black;
+				font-size: 19px;
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		.thumb-big {
+			max-width: 520px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		.thumb-big2 {
+			max-width: 320px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	@include breakpoint(max-xs) {
+		.thumb-big2 {
+			max-width: 320px;
+			img {
+				width: 100%;
+			}
+		}
+		.thumb-big {
+			width: 100%;
+			max-width: 100%;
+			img {
+				width: 100%;
+			}
+		}
+		.offtext {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			max-width: 70px;
+			height: 150px;
+			object-fit: contain;
 		}
 	}
 }

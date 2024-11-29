@@ -1025,3 +1025,34 @@
 	}
 }
 //Header White Area
+
+//Breadcrumb Section
+.breadcrumb-section {
+	background: url(../../assets/img/hero/breadcrumb-bg.jpg) no-repeat center
+		center;
+	background-size: cover;
+	padding: 250px 0 150px;
+	position: relative;
+	z-index: 1;
+	&::before {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		content: "";
+		opacity: 0.38;
+		background: #1c210c;
+		z-index: -1;
+	}
+	@include breakpoint(max-xl){
+		padding: 220px 0 150px;
+	}
+	@include breakpoint(max-md){
+		padding: 150px 0 80px;
+	}
+}
+.breadcrumb-black-header{
+	background: $black !important;
+}
+//Breadcrumb Section

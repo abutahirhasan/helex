@@ -673,6 +673,24 @@ span {
 .suit-facilites-section {
   background: #091018;
   padding-bottom: 120px;
+  position: relative;
+  z-index: 1;
+}
+.suit-facilites-section .shadow-ele1 {
+  position: absolute;
+  right: -20%;
+  top: -30%;
+  z-index: -1;
+  width: 1000px;
+  height: 1000px;
+}
+.suit-facilites-section .shadow-ele2 {
+  position: absolute;
+  left: -20%;
+  bottom: -40%;
+  z-index: -1;
+  width: 1000px;
+  height: 1000px;
 }
 
 .suit-facilites-thumb-inner .thumb-big2 {
@@ -738,6 +756,24 @@ span {
 }
 .city-view2-section .city-view-content-wrap .city-view-content {
   max-width: 550px;
+}
+
+.about-section05 {
+  z-index: 1;
+}
+.about-section05 .about5-cl1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  animation: updowns 8s linear infinite;
+  z-index: -1;
+}
+.about-section05 .about5-cl2 {
+  position: absolute;
+  top: -50px;
+  right: -80px;
+  z-index: -1;
 }
 
 @-webkit-keyframes rippleOne {
@@ -1714,6 +1750,71 @@ span {
   .date-picker-container .theme-btn {
     padding: 12px 20px !important;
     width: 200px;
+  }
+}
+
+.day-night-section {
+  background: #091018;
+  position: relative;
+  z-index: 1;
+}
+.day-night-section .day-ele1 {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  animation: updowns 2s linear infinite;
+  z-index: -1;
+}
+.day-night-section .day-ele2 {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+.day-night-section .section-title h2 {
+  font-size: 80px;
+}
+.day-night-section .section-title p {
+  font-size: 20px;
+  line-height: 28px;
+  max-width: 820px;
+  margin: 0 auto 40px;
+}
+.day-night-section .section-title .theme-btn {
+  border: 1px solid var(--white);
+}
+@media (max-width: 1399px) {
+  .day-night-section .section-title h2 {
+    font-size: 60px;
+  }
+  .day-night-section .section-title p {
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 820px;
+    margin: 0 auto 40px;
+  }
+  .day-night-section .section-title .theme-btn {
+    border: 1px solid var(--white);
+  }
+}
+@media (max-width: 991px) {
+  .day-night-section .section-title h2 {
+    font-size: 38px;
+  }
+  .day-night-section .section-title p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 auto 30px;
+  }
+}
+@media (max-width: 575px) {
+  .day-night-section .section-title h2 {
+    font-size: 28px;
+  }
+  .day-night-section .section-title p {
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0 auto 30px;
   }
 }
 
@@ -4911,6 +5012,46 @@ span {
   transform: scale(1.04);
 }
 
+.choose-section5 {
+  background: #091018;
+}
+.choose-section5 .section-title p {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.choose-items5 {
+  padding: 40px 32px;
+  background: var(--white);
+  transition: all 0.4s;
+}
+.choose-items5 .icon {
+  width: 120px;
+  height: 120px;
+  background: #c4c4c4;
+  margin: 0 auto 15px;
+  transition: all 0.4s;
+}
+.choose-items5:hover {
+  background: var(--theme);
+}
+.choose-items5:hover .icon {
+  background: var(--white);
+}
+@media (max-width: 1199px) {
+  .choose-items5 {
+    padding: 30px 16px;
+  }
+  .choose-items5 .icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+  }
+  .choose-items5 .icon img {
+    width: 40px;
+  }
+}
+
 .aprtment-rooms4 .apartment-cont {
   background: var(--white) !important;
 }
@@ -5351,6 +5492,18 @@ span {
   }
 }
 
+.testimonial-section2 {
+  position: relative;
+  z-index: 1;
+}
+.testimonial-section2 .shadow-ele3 {
+  position: absolute;
+  left: -20%;
+  top: -40%;
+  z-index: -1;
+  width: 1000px;
+  height: 1000px;
+}
 .testimonial-section2 .container {
   max-width: 1703px;
   margin: 0 auto;

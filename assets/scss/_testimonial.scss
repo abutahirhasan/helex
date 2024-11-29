@@ -301,8 +301,8 @@
 			}
 		}
 	}
-	@include breakpoint(max-xxl){
-		.city-view-content{
+	@include breakpoint(max-xxl) {
+		.city-view-content {
 			padding: 30px 10px;
 		}
 	}
@@ -311,6 +311,16 @@
 
 //Testimonial Section2
 .testimonial-section2 {
+	position: relative;
+	z-index: 1;
+	.shadow-ele3 {
+		position: absolute;
+		left: -20%;
+		top: -40%;
+		z-index: -1;
+		width: 1000px;
+		height: 1000px;
+	}
 	.container {
 		max-width: 1703px;
 		margin: 0 auto;

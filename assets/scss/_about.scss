@@ -220,6 +220,24 @@
 .suit-facilites-section {
 	background: #091018;
 	padding-bottom: 120px;
+	position: relative;
+	z-index: 1;
+	.shadow-ele1 {
+		position: absolute;
+		right: -20%;
+		top: -30%;
+		z-index: -1;
+		width: 1000px;
+		height: 1000px;
+	}
+	.shadow-ele2 {
+		position: absolute;
+		left: -20%;
+		bottom: -40%;
+		z-index: -1;
+		width: 1000px;
+		height: 1000px;
+	}
 }
 .suit-facilites-thumb-inner {
 	.thumb-big2 {
@@ -278,13 +296,33 @@
 }
 
 //City View Section
-.city-view2-section{
+.city-view2-section {
 	background: $white;
 	padding: 100px 0;
-	.city-view-content-wrap{
+	.city-view-content-wrap {
 		background: $white;
-		.city-view-content{
+		.city-view-content {
 			max-width: 550px;
 		}
+	}
+}
+
+
+//About Section 05
+.about-section05{
+	z-index: 1;
+	.about5-cl1{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		animation: updowns 8s linear infinite;
+		z-index: -1;
+	}
+	.about5-cl2{
+		position: absolute;
+		top: -50px;
+		right: -80px;
+		z-index: -1;
 	}
 }

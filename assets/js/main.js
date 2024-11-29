@@ -279,6 +279,46 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//>> city-slider-wrap2 Start <<//
+		const citySliderWrap2 = new Swiper(".city-slider-wrap2", {
+			spaceBetween: 24,
+			speed: 2000,
+			loop: true,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2000,
+			},
+			navigation: {
+				nextEl: ".array-prev",
+				prevEl: ".array-next",
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 2.8,
+				},
+				991: {
+					slidesPerView: 3,
+					spaceBetween: 14,
+				},
+				767: {
+					slidesPerView: 3,
+					spaceBetween: 14,
+				},
+				575: {
+					slidesPerView: 2,
+					spaceBetween: 14,
+				},
+				400: {
+					slidesPerView: 2,
+					spaceBetween: 14,
+				},
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 14,
+				},
+			},
+		});
+
 		//>> Brand Slider Start <<//
 		if ($(".brand-slider").length > 0) {
 			const brandSlider = new Swiper(".brand-slider", {

@@ -231,6 +231,82 @@
 		}
 	}
 }
+.city-items5 {
+	position: relative;
+	overflow: hidden;
+	&::before {
+		position: absolute;
+		left: 0;
+		top: 0;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: rgba(9, 16, 24, 0.582);
+	}
+	.content {
+		max-width: 345px;
+		.theme-btn {
+			border: 1px solid $white;
+			padding-top: 10px;
+			padding-bottom: 11px;
+		}
+		.box {
+			max-width: 277px;
+		}
+		.city-ele {
+			position: absolute;
+			width: 341px;
+			height: 265px;
+		}
+	}
+	@include breakpoint(max-xl) {
+		.content {
+			max-width: 345px;
+			padding-left: 9px;
+			padding-right: 8px;
+			.theme-btn {
+				border: 1px solid $white;
+				padding-top: 10px;
+				padding-bottom: 11px;
+			}
+			.box {
+				max-width: 277px;
+			}
+			.city-ele {
+				display: none;
+			}
+		}
+	}
+}
+.city-wrapper5 {
+	.swiper-slide {
+		.city-items5 {
+			&::before {
+				opacity: 0;
+				transition: all 0.5s;
+			}
+			.content {
+				opacity: 0;
+				transition: all 0.5s;
+			}
+		}
+		&.swiper-slide-active {
+			.city-items5 {
+				&::before {
+					opacity: 1;
+				}
+				.content {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xxl){
+		.city-view-content{
+			padding: 30px 10px;
+		}
+	}
+}
 //Apartment Testimonial
 
 //Testimonial Section2

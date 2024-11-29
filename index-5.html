@@ -40,26 +40,6 @@
             <i class="fa-regular fa-arrow-up"></i>
         </button> -->
 
-    <!-- Header Top Section Start -->
-    <div class="header-top-section d-lg-block d-none overflow-hidden">
-        <div class="container">
-            <div class="header-top-wrapper">
-                <a href="#" class="located d-flex align-items-center gap-2 fs-14">
-                    <i class="fa-solid fa-location-dot white-clr"></i> 2972 Westheimer Rd, Illinois 85486
-                </a>
-                <ul class="contact-list">
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="#" class="link">+92 (8800) 6830</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        <a href="#" class="link">helexasupport@gmail.com</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
     <!-- Offcanvas Area Start -->
     <div class="fix-area">
@@ -274,76 +254,75 @@
 
 
     <!-- Hero section start -->
-    <section class="hero-section hero-style2">
-        <div class="swiper hero-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="hero-1">
-                        <div class="hero-bg bg-cover" style="background-image: url(assets/img/hero/hero-thumb2.jpg);">
+    <section class="hero-section hero-style5">
+        <div class="container">
+            <div class="row g-4 align-items-center justify-content-between">
+                <div class="col-lg-8">
+                    <div class="hero-content">
+                        <span
+                            class="text-lg-start text-center sub-font text-white sub-title fs-20 mb-sm-3 mb-2 d-block wow fadeInUp" data-wow-delay=".4s">
+                            Authentic historical charm
+                        </span>
+                        <h1
+                            class="text-lg-start text-center mb-lg-5 mb-4 pb-lg-0 pb-2 white-clr fw-semibold text-uppercase wow fadeInUp" data-wow-delay=".5s">
+                            Jungle Safari
+                            Resort Comfort
+                            & Wildlife
+                        </h1>
+                        <div
+                            class="hero-btn-adjust d-flex justify-content-lg-start justify-content-center gap-sm-4 gap-3">
+                            <a href="#"
+                                class="theme-btn theme3-btn rounded-0 fw-normal text-capitalize gap-1 px-6 py-2 wow fadeInRight" data-wow-delay=".5s">
+                                Book Now
+                            </a>
+                            <a href="#" class="room d-flex align-items-center gap-sm-3 gap-2 white-clr wow fadeInLeft" data-wow-delay=".6s">
+                                <img src="assets/img/icon/right-arrow.png" alt="img" class="right-arrow">
+                                View Resort
+                            </a>
                         </div>
-                        <div class="container">
-                            <div class="hero-content">
-                                <span class="sub-font text-white sub-title fs-20 mb-sm-4 mb-3 d-block">
-                                    Authentic historical charm
-                                </span>
-                                <h1 class="mb-lg-5 mb-4 pb-lg-0 pb-2 white-clr fw-semibold">
-                                    Stay The Heart <br> Of New York <br>
-                                    City Hotel
-                                </h1>
-                                <div class="hero-btn-adjust justify-content-lg-start justify-content-center">
-                                    <a href="#" class="theme-btn rounded-2 fw-normal text-capitalize gap-1 px-6">
-                                        Book Now
-                                    </a>
-                                    <a href="#" class="room">
-                                        <img src="assets/img/icon/right-arrow.png" alt="img" class="right-arrow"> View
-                                        Room
-                                    </a>
-                                </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-lg-0 mt-sm-5 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="date-picker-container">
+                        <form id="booking-form"
+                            class="d-flex flex-column justify-content-start align-items-center gap-xxl-3 gap-lg-3 gap-2">
+                            <div class="form-group">
+                                <label for="check-in" class="black2-clr fs-14 fw-500 mb-2 d-block">Check In:</label>
+                                <input type="date" id="check-in" name="check-in">
                             </div>
-                            <div class="about-textcircle d-center wow fadeInUp" data-wow-delay=".5s">
-                                <img src="assets/img/element/text-circle-white.png" alt="img">
-                                <div class="boxes position-absolute">
-                                    <span class="exprience d-flex align-items-end justify-content-center">
-                                        25
-                                        <span class="text-uppercase year">YR</span>
-                                    </span>
-                                    <p class="fs-20 text-nowrap d-block heading-font text-capitalize">Of
-                                        Experiences</p>
-                                </div>
+                            
+                            <div class="form-group">
+                                <label for="check-in" class="black2-clr fs-14 fw-500 mb-2 d-block">check-out:</label>
+                                <input type="date" id="check-out" name="check-out">
                             </div>
-                        </div>
-                        <div class="hero-slide-btn">
-                            <button type="button" class="common-slide-btn d-center array-prev">
-                                <i class="fa-solid fa-angle-left"></i>
+                            
+                            <div class="form-group">
+                                <label for="adults" class="black2-clr fs-14 fw-500 mb-2 d-block">Adult:</label>
+                                <select id="adults" name="adults">
+                                    <option value="1">+ Add Guests</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="child" class="black2-clr fs-14 fw-500 mb-2 d-block">Children:</label>
+                                <select id="child" name="child">
+                                    <option value="1">+ Add Guests</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+
+                            <button type="submit"
+                                class="theme-btn theme3-btn text-nowrap d-center rounded-0 fs-16 fw-500 text-center text-capitalize">
+                                Check Availability
                             </button>
-                            <button type="button" class="common-slide-btn d-center array-next">
-                                <i class="fa-solid fa-angle-right"></i>
-                            </button>
-                        </div>
-                        <!-- Ele -->
-                        <div class="hero-satisfaction">
-                            <div class="satisfaction-user">
-                                <div class="satisfaction-item">
-                                    <img src="assets/img/testimonial/satisfaction-user1.png" alt="img"
-                                        class="rounded-circle">
-                                </div>
-                                <div class="satisfaction-item">
-                                    <img src="assets/img/testimonial/satisfaction-user2.png" alt="img"
-                                        class="rounded-circle">
-                                </div>
-                                <div class="satisfaction-item">
-                                    <img src="assets/img/testimonial/satisfaction-user1.png" alt="img"
-                                        class="rounded-circle">
-                                </div>
-                                <a href="#0" class="satisfaction-link">
-                                    <img src="assets/img/icon/arrow-right-rotate.png" alt="icon">
-                                </a>
-                            </div>
-                            <div class="satisfaction-text">
-                                <h3>100K+</h3>
-                                <p>Satisfied Client’s</p>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -361,7 +340,8 @@
                             The Day of Jungle Way to Meet the World
                         </h2>
                         <p class="white-clr fs-16 wow fadeInUp" data-wow-delay=".4s">
-                            Safari Jungle Resort is a luxurious retreat nestled deep within the heart of a vast jungle, offering an immersive blend
+                            Safari Jungle Resort is a luxurious retreat nestled deep within the heart of a vast jungle,
+                            offering an immersive blend
                             of adventure and relaxation. Surrounded by lush greenery, exotic wildlife,
                             and the sounds of nature, the resort provides guests with a unique opportunity to
                             experience the wilderness in comfort

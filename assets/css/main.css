@@ -2333,7 +2333,7 @@ span {
   font-size: 16px;
 }
 .header-main .main-menu ul li a:hover {
-  color: var(--theme2) !important;
+  color: var(--theme) !important;
 }
 .header-main .main-menu ul li .submenu {
   position: absolute;
@@ -2409,7 +2409,7 @@ span {
   color: var(--theme);
 }
 .header-main .main-menu ul li .has-homemenu {
-  width: 500px;
+  width: 870px;
   padding: 30px 30px 10px 30px;
   opacity: 0;
   left: 0px;
@@ -2418,9 +2418,16 @@ span {
 }
 .header-main .main-menu ul li .has-homemenu .homemenu-items {
   display: flex;
-  align-items: center;
-  gap: 18px;
-  justify-content: space-between;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .header-main .main-menu ul li .has-homemenu .homemenu-items {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu {
+    width: 31.33%;
+  }
 }
 @media (max-width: 991px) {
   .header-main .main-menu ul li .has-homemenu .homemenu-items {
@@ -2442,6 +2449,7 @@ span {
   transform: translate(-50%, -50%);
   width: 60%;
   gap: 10px;
+  text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -2449,6 +2457,9 @@ span {
   visibility: hidden;
   transition: all 0.4s ease-in-out;
   margin-top: 20px;
+}
+.header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb .demo-button span {
+  text-align: center;
 }
 .header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb .demo-button .theme-btn {
   padding: 14px 20px;
@@ -2525,6 +2536,10 @@ span {
 .header-main .search-trigger {
   font-size: 19px;
   color: var(--white);
+}
+.header-main .search-trigger img {
+  width: 26px;
+  object-fit: contain;
 }
 .header-main .tolly-icon .count-quan {
   position: absolute;
@@ -2714,14 +2729,8 @@ span {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-@media (min-width: 1200px) {
-  .fix-area {
-    display: none !important;
-  }
-}
-
 .offcanvas__info {
-  background: var(--bg) none repeat scroll 0 0;
+  background: var(--white) none repeat scroll 0 0;
   border-left: 2px solid var(--theme);
   position: fixed;
   right: 0;
@@ -2759,6 +2768,9 @@ span {
   height: 100%;
   padding: 30px 30px;
 }
+.offcanvas__wrapper .offcanvas__content {
+  padding-bottom: 20px;
+}
 .offcanvas__wrapper .offcanvas__content .text {
   color: var(--text);
 }
@@ -2783,7 +2795,7 @@ span {
   margin-top: 20px;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
   line-height: 22px;
@@ -2792,14 +2804,14 @@ span {
   color: var(--black);
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li .offcanvas__contact-icon {
   margin-right: 10px;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li .offcanvas__contact-icon i {
   color: var(--black);
-  font-size: 18px;
+  font-size: 21px;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact span {
   text-transform: initial;
@@ -2825,6 +2837,7 @@ span {
   gap: 10px;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact .social-icon a {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   width: 45px;
   height: 45px;
   line-height: 45px;
@@ -2832,7 +2845,7 @@ span {
   font-size: 16px;
   display: block;
   background: var(--white);
-  color: var(--text);
+  color: var(--black);
   border-radius: 8px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;

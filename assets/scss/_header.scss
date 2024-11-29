@@ -7,12 +7,12 @@
 		@include flex;
 		justify-content: space-between;
 		padding: 11px 0;
-		.located{
+		.located {
 			color: #fff;
 			opacity: 0.8;
-			i{
+			i {
 				font-size: 16px;
-				color: $white
+				color: $white;
 			}
 		}
 		.contact-list {
@@ -34,22 +34,22 @@
 			}
 		}
 	}
-	&.style3{
+	&.style3 {
 		background: $white;
-		.located{
+		.located {
 			font-weight: 500;
 			color: rgb(7, 10, 1, 0.9);
-			i{
+			i {
 				color: $black;
 				opacity: 1;
 			}
 		}
-		.contact-list{
-			li{
-				i{
+		.contact-list {
+			li {
+				i {
 					color: $black;
 				}
-				a{
+				a {
 					color: rgb(7, 10, 1, 0.9);
 				}
 			}
@@ -96,7 +96,7 @@
 					}
 
 					&:hover {
-						color: $theme-color-2 !important;
+						color: $theme-color !important;
 					}
 				}
 				.submenu {
@@ -186,7 +186,7 @@
 				}
 
 				.has-homemenu {
-					width: 500px;
+					width: 870px;
 					padding: 30px 30px 10px 30px;
 					opacity: 0;
 					// left: -250px;
@@ -195,9 +195,15 @@
 					padding: 20px 20px 20px 20px;
 
 					.homemenu-items {
-						@include flex;
-						gap: 18px;
-						justify-content: space-between;
+						display: flex;
+						justify-content: center;
+						@include breakpoint(xl) {
+							flex-wrap: wrap;
+							gap: 24px;
+							.homemenu {
+								width: 31.33%;
+							}
+						}
 						@include breakpoint(max-lg) {
 							flex-wrap: wrap;
 						}
@@ -214,6 +220,7 @@
 									transform: translate(-50%, -50%);
 									width: 60%;
 									gap: 10px;
+									text-align: center;
 									display: flex;
 									justify-content: center;
 									flex-direction: column;
@@ -221,6 +228,9 @@
 									visibility: hidden;
 									@include transition;
 									margin-top: 20px;
+									span{
+										text-align: center;
+									}
 									.theme-btn {
 										padding: 14px 20px;
 										color: $white !important;
@@ -320,12 +330,16 @@
 			object-fit: contain;
 		}
 	}
-	.search-trigger{
+	.search-trigger {
 		font-size: 19px;
 		color: $white;
+		img {
+			width: 26px;
+			object-fit: contain;
+		}
 	}
-	.tolly-icon{
-		.count-quan{
+	.tolly-icon {
+		.count-quan {
 			position: absolute;
 			top: -6px;
 			right: -6px;
@@ -349,12 +363,12 @@
 	width: 100%;
 	z-index: 9;
 	background: rgb(245, 178, 69, 0.05);
-	&.style3{
+	&.style3 {
 		background: rgb(255, 255, 255, 0.07);
 	}
-	.container{
+	.container {
 		max-width: 1710px;
-		margin: 0 auto
+		margin: 0 auto;
 	}
 	.header-main {
 		.header-left {
@@ -453,7 +467,7 @@
 	}
 	.header-logo {
 		width: 90px;
-        display: block;
+		display: block;
 		img {
 			width: 100%;
 			object-fit: contain;
@@ -518,12 +532,10 @@
 
 //>>>>> Offcanvas Start <<<<<//
 .fix-area {
-	@include breakpoint(xl) {
-		display: none !important;
-	}
+	
 }
 .offcanvas__info {
-	background: $bg-color none repeat scroll 0 0;
+	background: $white none repeat scroll 0 0;
 	border-left: 2px solid $theme-color;
 	position: fixed;
 	right: 0;
@@ -560,6 +572,7 @@
 	height: 100%;
 	padding: 30px 30px;
 	.offcanvas__content {
+		padding-bottom: 20px;
 		.text {
 			color: $text-color;
 		}
@@ -584,7 +597,7 @@
 				margin-top: 20px;
 
 				li {
-					font-size: 14px;
+					font-size: 16px;
 					font-weight: 400;
 					text-transform: capitalize;
 					line-height: 22px;
@@ -594,7 +607,7 @@
 					}
 
 					&:not(:last-child) {
-						margin-bottom: 8px;
+						margin-bottom: 14px;
 					}
 
 					.offcanvas__contact-icon {
@@ -602,7 +615,7 @@
 
 						i {
 							color: $black;
-							font-size: 18px;
+							font-size: 21px;
 						}
 					}
 				}
@@ -634,6 +647,7 @@
 				gap: 10px;
 
 				a {
+					box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 					width: 45px;
 					height: 45px;
 					line-height: 45px;
@@ -641,7 +655,7 @@
 					font-size: 16px;
 					display: block;
 					background: $white;
-					color: $text-color;
+					color: $black;
 					border-radius: 8px;
 					-webkit-transition: all 0.4s ease-in-out;
 					transition: all 0.4s ease-in-out;

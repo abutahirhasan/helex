@@ -1045,14 +1045,24 @@
 		background: #1c210c;
 		z-index: -1;
 	}
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		padding: 220px 0 150px;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		padding: 150px 0 80px;
 	}
+	&.restaurant-bread {
+		background: url(../../assets/img/hero/restaurant-bread.jpg) no-repeat
+			center center;
+		background-size: cover;
+	}
+	&.rooms-bread {
+		background: url(../../assets/img/hero/room-bread.jpg) no-repeat
+			center center;
+		background-size: cover;
+	}
 }
-.breadcrumb-black-header{
+.breadcrumb-black-header {
 	background: $black !important;
 }
 //Breadcrumb Section

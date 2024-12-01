@@ -412,3 +412,37 @@
 	}
 }
 //Video Section 2
+
+//Gallery Project
+.gallery-single-item {
+	position: relative;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	.arrows-area {
+		position: absolute;
+		width: 90%;
+		height: 90%;
+		background: $white;
+		transform: rotateX(90deg);
+		z-index: 1;
+		transition: all 0.4s;
+		.marrows {
+			width: 60px;
+			height: 60px;
+			object-fit: contain;
+		}
+		.arrow-text {
+			position: absolute;
+			bottom: 30px;
+			z-index: 2;
+		}
+	}
+	&:hover {
+		.arrows-area {
+			transform: rotateX(0deg);
+		}
+	}
+}
+//Gallery Project

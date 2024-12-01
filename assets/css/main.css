@@ -1046,7 +1046,8 @@ span {
 .contact-wrapper .contact-from-items .contact-from-area .form-clt .icon i {
   color: var(--header);
 }
-.contact-wrapper .contact-from-items .contact-from-area .form-clt input, .contact-wrapper .contact-from-items .contact-from-area .form-clt textarea {
+.contact-wrapper .contact-from-items .contact-from-area .form-clt input,
+.contact-wrapper .contact-from-items .contact-from-area .form-clt textarea {
   width: 100%;
   outline: none;
   border-radius: 0;
@@ -1060,14 +1061,17 @@ span {
   transition: all 0.4s ease-in-out;
 }
 @media (max-width: 575px) {
-  .contact-wrapper .contact-from-items .contact-from-area .form-clt input, .contact-wrapper .contact-from-items .contact-from-area .form-clt textarea {
+  .contact-wrapper .contact-from-items .contact-from-area .form-clt input,
+  .contact-wrapper .contact-from-items .contact-from-area .form-clt textarea {
     padding: 15px 20px;
   }
 }
-.contact-wrapper .contact-from-items .contact-from-area .form-clt input::placeholder, .contact-wrapper .contact-from-items .contact-from-area .form-clt textarea::placeholder {
+.contact-wrapper .contact-from-items .contact-from-area .form-clt input::placeholder,
+.contact-wrapper .contact-from-items .contact-from-area .form-clt textarea::placeholder {
   color: var(--text);
 }
-.contact-wrapper .contact-from-items .contact-from-area .form-clt input:hover, .contact-wrapper .contact-from-items .contact-from-area .form-clt textarea:hover {
+.contact-wrapper .contact-from-items .contact-from-area .form-clt input:hover,
+.contact-wrapper .contact-from-items .contact-from-area .form-clt textarea:hover {
   border-bottom: 1px solid var(--header);
 }
 .contact-wrapper .contact-from-items .contact-from-area .form-clt textarea {
@@ -1079,7 +1083,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #32353F;
+  border-bottom: 1px solid #32353f;
 }
 @media (max-width: 1199px) {
   .contact-info-area {
@@ -1111,14 +1115,14 @@ span {
   height: 90px;
   line-height: 48px;
   text-align: center;
-  background: #2D313B;
+  background: #2d313b;
   padding: 22px;
 }
 .contact-info-area .contact-info-items .content p {
   color: var(--white);
   margin-bottom: 5px;
   font-size: 20px;
-  color: #BBBFCB;
+  color: #bbbfcb;
 }
 .contact-info-area .contact-info-items .content h3 {
   font-size: 24px;
@@ -1153,7 +1157,7 @@ span {
 }
 .contact-us-wrapper-2 .contact-us-area .contact-us-items .content p {
   font-size: 20px;
-  color: #BBBFCB;
+  color: #bbbfcb;
   margin-bottom: 5px;
 }
 .contact-us-wrapper-2 .contact-us-area .contact-us-items .content h3 {
@@ -1176,6 +1180,84 @@ span {
 .contact-section-2 .track-image img {
   width: 100%;
   height: 100%;
+}
+
+.contact-info-content .contact-info-item .icon {
+  background: #eaeaea;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  transition: all 0.4s;
+}
+.contact-info-content .contact-info-item .icon i {
+  font-size: 34px;
+  color: var(--black);
+}
+@media (max-width: 1199px) {
+  .contact-info-content .contact-info-item .icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+  }
+  .contact-info-content .contact-info-item .icon i {
+    font-size: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .contact-info-content .contact-info-item .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+  }
+  .contact-info-content .contact-info-item .icon i {
+    font-size: 20px;
+  }
+}
+.contact-info-content .contact-info-item:hover .icon {
+  background: var(--theme);
+}
+
+.general-inquriest {
+  background: #18181b;
+  padding: 100px 100px;
+  position: relative;
+  z-index: 1;
+}
+.general-inquriest .inque-ele {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.general-inquriest .frm-grp textarea,
+.general-inquriest .frm-grp input {
+  border: unset;
+  outline: none;
+  font-size: 16px;
+  padding: 16px 30px;
+  border-radius: 4px;
+  color: var(--white);
+  background: #2f2f32;
+  width: 100%;
+}
+.general-inquriest .frm-grp textarea::placeholder,
+.general-inquriest .frm-grp input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+@media (max-width: 1399px) {
+  .general-inquriest {
+    padding: 60px 60px;
+  }
+}
+@media (max-width: 991px) {
+  .general-inquriest {
+    padding: 40px 24px;
+  }
+  .general-inquriest .frm-grp textarea,
+  .general-inquriest .frm-grp input {
+    font-size: 16px;
+    padding: 16px 18px;
+  }
 }
 
 .vedio-area {
@@ -1309,6 +1391,27 @@ span {
 @media (max-width: 1199px) {
   .hotel-booking-content::before {
     display: none;
+  }
+}
+
+.hotel-booking-main {
+  background: rgba(251, 224, 180, 0.2);
+}
+.hotel-booking-main .hotel-booking-content::before {
+  background: var(--white);
+}
+.hotel-booking-main .booking-info-area {
+  border: 4px solid var(--black);
+}
+@media (max-width: 1399px) {
+  .hotel-booking-main .booking-info-area {
+    border: 1px solid var(--black);
+  }
+}
+
+@media (min-width: 992px) {
+  .rooms-details-section .head-texts {
+    font-size: 48px;
   }
 }
 
@@ -1818,10 +1921,6 @@ span {
   }
 }
 
-.custom-accordion {
-  display: grid;
-  gap: 30px;
-}
 .custom-accordion .accordion-item {
   border: unset;
 }
@@ -1932,6 +2031,10 @@ span {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.faq-section.faq-main {
+  background: rgba(245, 178, 69, 0.4);
+}
+
 .offer-section {
   background: rgba(245, 178, 69, 0.4);
   position: relative;
@@ -2010,6 +2113,24 @@ span {
   .city-view-content-wrap .city-view-content .city-icon-inner li span {
     font-size: 14px;
   }
+}
+.city-view-content-wrap.stylev2 {
+  background: var(--white);
+}
+.city-view-content-wrap.stylev2 .city-icon-inner li img {
+  filter: brightness(0);
+}
+.city-view-content-wrap.stylev2 .theme-btn {
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+.city-view-content-wrap.stylev2 .theme-btn:hover {
+  color: var(--white);
+}
+
+.oops-thumb {
+  max-width: 200px;
+  object-fit: contain;
 }
 
 .facilites-wrap {
@@ -4250,6 +4371,14 @@ span {
     padding: 150px 0 80px;
   }
 }
+.breadcrumb-section.restaurant-bread {
+  background: url(../../assets/img/hero/restaurant-bread.jpg) no-repeat center center;
+  background-size: cover;
+}
+.breadcrumb-section.rooms-bread {
+  background: url(../../assets/img/hero/room-bread.jpg) no-repeat center center;
+  background-size: cover;
+}
 
 .breadcrumb-black-header {
   background: var(--black) !important;
@@ -4977,6 +5106,36 @@ span {
   .video-section.style2 .luxuries-wrap .luxuries-vid i {
     font-size: 22px;
   }
+}
+
+.gallery-single-item {
+  position: relative;
+}
+.gallery-single-item img {
+  width: 100%;
+  height: 100%;
+}
+.gallery-single-item .arrows-area {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background: var(--white);
+  transform: rotateX(90deg);
+  z-index: 1;
+  transition: all 0.4s;
+}
+.gallery-single-item .arrows-area .marrows {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+.gallery-single-item .arrows-area .arrow-text {
+  position: absolute;
+  bottom: 30px;
+  z-index: 2;
+}
+.gallery-single-item:hover .arrows-area {
+  transform: rotateX(0deg);
 }
 
 .section-title {

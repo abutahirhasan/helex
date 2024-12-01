@@ -87,6 +87,27 @@
 			}
 		}
 	}
+	&.stylev2{
+		background: $white;
+		.city-icon-inner{
+			li{
+				img{
+					filter: brightness(0);
+				}
+			}
+		}
+		.theme-btn{
+			border: 1px solid $black;
+			color: $black;
+			&:hover{
+				color: $white;
+			}
+		}
+	}
+}
+.oops-thumb{
+	max-width: 200px;
+	object-fit: contain;
 }
 //City Content Area
 

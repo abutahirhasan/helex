@@ -1,7 +1,7 @@
 //Faq Section
 .custom-accordion {
-	display: grid;
-	gap: 30px;
+	// display: grid;
+	// gap: 30px;
 	.accordion-item {
 		border: unset;
 		.accordion-header {
@@ -116,6 +116,12 @@
 				}
 			}
 		}
+	}
+}
+
+.faq-section{
+	&.faq-main{
+		background: rgb(245, 178, 69, 0.4);
 	}
 }
 //Faq Section

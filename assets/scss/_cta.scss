@@ -133,28 +133,69 @@
 	}
 }
 
-//hotel booking main 
-.hotel-booking-main{
+//hotel booking main
+.hotel-booking-main {
 	background: rgb(251, 224, 180, 0.2);
-	.hotel-booking-content::before{
+	.hotel-booking-content::before {
 		background: $white;
 	}
-	.booking-info-area{
+	.booking-info-area {
 		border: 4px solid $black;
-		@include breakpoint(max-xxl){
+		@include breakpoint(max-xxl) {
 			border: 1px solid $black;
 		}
 	}
 }
 
-//Rooms Details
-.rooms-details-section{
-	.head-texts{
-		@include breakpoint(lg){
-			font-size: 48px;
+//Acommodation
+.acomodation-section {
+	.head-texts {
+		font-size: 48px;
+		@include breakpoint(max-xxl) {
+			font-size: 38px;
+		}
+		@include breakpoint(max-lg) {
+			font-size: 24px;
+			line-height: 29px;
+		}
+		@include breakpoint(max-xs) {
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 29px;
+		}
+	}
+	.booking-info-area {
+		border-radius: 3px;
+		overflow: hidden;
+		background: $theme-color;
+		.theme-btn {
+			background: $white;
+			width: 224px;
+			margin: 0 auto;
+			padding: 10px 16px !important;
+			color: $theme-color;
+		}
+	}
+	.acomodation-booking-content {
+		p {
+			line-height: 28px;
+		}
+		.booking-listing-inner {
+			max-width: 525px;
+			.list {
+				li {
+					i {
+						font-size: 5px;
+					}
+				}
+			}
+		}
+		.theme-btn {
+			padding: 12px 28px;
 		}
 	}
 }
+//Acommodation
 
 //resort-tabbing-area
 .resort-section {

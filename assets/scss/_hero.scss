@@ -1057,8 +1057,13 @@
 		background-size: cover;
 	}
 	&.rooms-bread {
-		background: url(../../assets/img/hero/room-bread.jpg) no-repeat
-			center center;
+		background: url(../../assets/img/hero/room-bread.jpg) no-repeat center
+			center;
+		background-size: cover;
+	}
+	&.reservation-bread {
+		background: url(../../assets/img/hero/restaurant-bread.jpg) no-repeat center
+			center;
 		background-size: cover;
 	}
 }

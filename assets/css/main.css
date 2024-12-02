@@ -15,6 +15,7 @@ Version: 1.0.0
   --theme: #F5B245;
   --theme2: #0077B1;
   --theme3: #DA3C3C;
+  --theme4: #0162FD;
   --header: #01030D;
   --header2: #161616;
   --ratting: #febb02;
@@ -4757,6 +4758,110 @@ span {
 @media (max-width: 500px) {
   .drinks-items {
     max-width: 100%;
+  }
+}
+
+.quote-text {
+  position: relative;
+  border-left: 4px solid var(--theme);
+  padding: 40px 40px;
+  background: #ecf3ff;
+  color: var(--black2);
+}
+.quote-text .quote-icons {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  font-size: 36px;
+  color: var(--theme);
+}
+@media (max-width: 500px) {
+  .quote-text {
+    padding: 24px 19px;
+  }
+  .quote-text .quote-icons {
+    display: none;
+  }
+}
+
+.tips-inner {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+@media (max-width: 1399px) {
+  .tips-inner {
+    gap: 16px;
+  }
+}
+@media (max-width: 1199px) {
+  .tips-inner {
+    flex-wrap: wrap;
+  }
+}
+
+.taging-share {
+  border-top: 1px solid #e6e8ec;
+  border-bottom: 1px solid #e6e8ec;
+  padding: 20px 0;
+}
+.taging-share .details-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.taging-share .details-tags li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black2);
+  display: inline-block;
+  text-align: center;
+  padding: 8px 14px;
+  background: #ecf3ff;
+  border-radius: 8px;
+}
+.taging-share .details-tags li a:hover {
+  background: var(--theme);
+}
+
+.perker-author {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: #f3f7fc;
+  padding: 34px 36px;
+}
+@media (max-width: 500px) {
+  .perker-author {
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+  }
+}
+
+.post-comment {
+  background: #f3f7fc;
+  padding: 40px 40px;
+  border-radius: 10px;
+}
+.post-comment .post-grp textarea,
+.post-comment .post-grp input {
+  width: 100%;
+  outline: none;
+  padding: 11px 16px;
+  color: #7c8392;
+  border-radius: 8px;
+  border: 1px solid #cfd9e5;
+  background: var(--white);
+  font-size: 14px;
+}
+.post-comment .post-grp textarea::placeholder,
+.post-comment .post-grp input::placeholder {
+  color: #7c8392;
+}
+@media (max-width: 767px) {
+  .post-comment {
+    padding: 30px 20px;
   }
 }
 

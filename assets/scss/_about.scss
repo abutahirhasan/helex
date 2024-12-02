@@ -5,9 +5,18 @@
 		align-items: center;
 		gap: 52px;
 		.thumb-small {
+			overflow: hidden;
 			max-width: 300px;
+			transition: all 0.4s;
 			img {
+				overflow: hidden;
 				width: 100%;
+				transition: all 0.4s;
+			}
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
 			}
 		}
 		.about-textcircle {
@@ -44,6 +53,32 @@
 			.about-textcircle {
 				margin: 0 auto;
 			}
+		}
+	}
+	.thumb1 {
+		transition: all 0.4s;
+		overflow: hidden;
+		img {
+			transition: all 0.4s;
+			overflow: hidden;
+		}
+		&:hover {
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+}
+.about-thumb1 {
+	transition: all 0.4s;
+	overflow: hidden;
+	img {
+		transition: all 0.4s;
+		overflow: hidden;
+	}
+	&:hover {
+		img {
+			transform: scale(1.05);
 		}
 	}
 }
@@ -307,11 +342,10 @@
 	}
 }
 
-
 //About Section 05
-.about-section05{
+.about-section05 {
 	z-index: 1;
-	.about5-cl1{
+	.about5-cl1 {
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
@@ -319,7 +353,7 @@
 		animation: updowns 8s linear infinite;
 		z-index: -1;
 	}
-	.about5-cl2{
+	.about5-cl2 {
 		position: absolute;
 		top: -50px;
 		right: -80px;

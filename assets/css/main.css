@@ -463,10 +463,17 @@ span {
   gap: 52px;
 }
 .thumb2-wrap .thumb2-inne .thumb-small {
+  overflow: hidden;
   max-width: 300px;
+  transition: all 0.4s;
 }
 .thumb2-wrap .thumb2-inne .thumb-small img {
+  overflow: hidden;
   width: 100%;
+  transition: all 0.4s;
+}
+.thumb2-wrap .thumb2-inne .thumb-small:hover img {
+  transform: scale(1.05);
 }
 .thumb2-wrap .thumb2-inne .about-textcircle .boxes {
   padding-top: 20px;
@@ -504,6 +511,29 @@ span {
   .thumb2-wrap .thumb2-inne .about-textcircle {
     margin: 0 auto;
   }
+}
+.thumb2-wrap .thumb1 {
+  transition: all 0.4s;
+  overflow: hidden;
+}
+.thumb2-wrap .thumb1 img {
+  transition: all 0.4s;
+  overflow: hidden;
+}
+.thumb2-wrap .thumb1:hover img {
+  transform: scale(1.05);
+}
+
+.about-thumb1 {
+  transition: all 0.4s;
+  overflow: hidden;
+}
+.about-thumb1 img {
+  transition: all 0.4s;
+  overflow: hidden;
+}
+.about-thumb1:hover img {
+  transform: scale(1.05);
 }
 
 .about-shape-left {
@@ -2651,16 +2681,16 @@ span {
   transition: all 0.3s ease-in-out;
   content: "";
 }
-.header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb:hover::before {
+.header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb.active::before, .header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb:hover::before {
   visibility: visible;
   opacity: 1;
 }
-.header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb:hover .demo-button {
+.header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb.active .demo-button, .header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb:hover .demo-button {
   opacity: 1;
   visibility: visible;
   margin-top: 0;
 }
-.header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb:hover .homemenu-btn {
+.header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb.active .homemenu-btn, .header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb:hover .homemenu-btn {
   opacity: 1;
   visibility: visible;
   bottom: 50%;
@@ -3051,6 +3081,10 @@ span {
     padding: 20px;
   }
 }
+.blar-comming img {
+  filter: blur(4px);
+}
+
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;

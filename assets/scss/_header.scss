@@ -271,6 +271,7 @@
 									transition: all 0.3s ease-in-out;
 									content: "";
 								}
+								&.active,
 								&:hover {
 									&::before {
 										visibility: visible;
@@ -703,5 +704,12 @@
 @media (max-width: 575px) {
 	.offcanvas__wrapper {
 		padding: 20px;
+	}
+}
+
+
+.blar-comming{
+	img{
+		filter: blur(4px);
 	}
 }

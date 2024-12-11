@@ -1,10 +1,10 @@
 /*-----------------------------------------------------------------
 
-Template Name: Helex - Luxury Hotel HTML Template 
-Author:  Mirrortheme
-Author URI: 
+Theme Name: Helex
+Author:  Namespace-IT
+Author URI: https://themeforest.net/user/namespace-it
+Description: Helex - Luxury Hotel HTML Template<
 Version: 1.0.0
-Description: Helex - Luxury Hotel HTML Template <
 
 -------------------------------------------------------------------
 CSS TABLE OF CONTENTS

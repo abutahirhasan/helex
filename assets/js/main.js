@@ -1,10 +1,12 @@
 /*-----------------------------------------------------------------
 
-Theme Name: Helex
-Author:  Namespace-IT
-Author URI: https://themeforest.net/user/namespace-it
-Description: Helex - Luxury Hotel HTML Template<
-Version: 1.0.0
+Project:        Helex Luxury Hotel
+Author URI:     https://themeforest.net/user/namespace-it
+Version:        1.1
+File:           Js File
+Last change:    23/12/2024
+Assigned to:    Helex - Luxury Hotel HTML Template
+Primary use:    Hotel 
 
 -------------------------------------------------------------------
 CSS TABLE OF CONTENTS
@@ -481,7 +483,7 @@ CSS TABLE OF CONTENTS
 				$("#back-top").removeClass("show");
 			}
 		});
-		$("#back-top").click(function () {
+		$("#back-top").on("click", function () {
 			$("html, body").animate({ scrollTop: 0 }, 800);
 			return false;
 		});
@@ -531,65 +533,51 @@ CSS TABLE OF CONTENTS
 		// }
 	});
 
-document.addEventListener("DOMContentLoaded", function () {
-	const bookingForm = document.querySelector("#booking-form");
+	document.addEventListener("DOMContentLoaded", function () {
+		const bookingForm = document.querySelector("#booking-form");
 
-	if (bookingForm) {
-		bookingForm.addEventListener("submit", function (e) {
-			e.preventDefault();
+		if (bookingForm) {
+			bookingForm.addEventListener("submit", function (e) {
+				e.preventDefault();
 
-			const checkIn = bookingForm.querySelector("#check-in").value;
-			const checkOut = bookingForm.querySelector("#check-out").value;
-			const adults = bookingForm.querySelector("#adults").value;
-			const children = bookingForm.querySelector("#children").value;
+				const checkIn = bookingForm.querySelector("#check-in").value;
+				const checkOut = bookingForm.querySelector("#check-out").value;
+				const adults = bookingForm.querySelector("#adults").value;
+				const children = bookingForm.querySelector("#children").value;
 
-			// Validate dates
-			if (!checkIn || !checkOut) {
-				alert("Please select both check-in and check-out dates.");
-				return;
-			}
+				// Validate dates
+				if (!checkIn || !checkOut) {
+					alert("Please select both check-in and check-out dates.");
+					return;
+				}
 
-			// Ensure check-out is after check-in
-			if (new Date(checkOut) <= new Date(checkIn)) {
-				alert("Check-out date must be after check-in date.");
-				return;
-			}
+				// Ensure check-out is after check-in
+				if (new Date(checkOut) <= new Date(checkIn)) {
+					alert("Check-out date must be after check-in date.");
+					return;
+				}
 
-			alert(`Booking Details:
+				alert(`Booking Details:
                 Check-in: ${checkIn}
                 Check-out: ${checkOut}
                 Adults: ${adults}
                 Children: ${children}`);
-		});
-	}
-});
+			});
+		}
+	});
 
 	//Cart Increment Decriemnt
 
 	// quntity increment and decrement
-	const quantityIncrement = document.querySelectorAll(".quantityIncrement");
-	const quantityDecrement = document.querySelectorAll(".quantityDecrement");
-	if (quantityIncrement && quantityDecrement) {
-		quantityIncrement.forEach((increment) => {
-			increment.addEventListener("click", function () {
-				const value = parseInt(
-					increment.parentElement.querySelector("input").value
-				);
-				increment.parentElement.querySelector("input").value = value + 1;
-			});
-		});
-
-		quantityDecrement.forEach((decrement) => {
-			decrement.addEventListener("click", function () {
-				const value = parseInt(
-					decrement.parentElement.querySelector("input").value
-				);
-				if (value > 1) {
-					decrement.parentElement.querySelector("input").value = value - 1;
-				}
-			});
-		});
-	}
+	$(document).on("click", ".quantityIncrement", function () {
+		const input = $(this).siblings("input");
+		input.val(parseInt(input.val(), 10) + 1);
+	});
+	$(document).on("click", ".quantityDecrement", function () {
+		const input = $(this).siblings("input");
+		const currentVal = parseInt(input.val(), 10);
+		if (currentVal > 1) input.val(currentVal - 1);
+	});
 
 	function loader() {
 		$(window).on("load", function () {

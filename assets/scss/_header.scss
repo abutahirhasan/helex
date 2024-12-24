@@ -366,6 +366,12 @@
 	width: 100%;
 	z-index: 9;
 	background: rgb(245, 178, 69, 0.05);
+	transition: all 0.5s;
+	&.sticky{
+		position: sticky;
+		top: 0;
+		background: #353844 !important;
+	}
 	&.style3 {
 		background: rgb(255, 255, 255, 0.07);
 	}

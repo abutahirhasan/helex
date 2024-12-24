@@ -1,70 +1,121 @@
-/*-----------------------------------------------------------------
+/* ==============
+ ========= js documentation ==========================
 
-Project:        Helex Luxury Hotel
-Author URI:     https://themeforest.net/user/namespace-it
-Version:        1.1
-File:           Js File
-Last change:    23/12/2024
-Assigned to:    Helex - Luxury Hotel HTML Template
-Primary use:    Hotel 
+ * template name: Helex
+ * version: 1.0
+ * date: 25.12.2024
+ * description: Luxury Hotel HTML5 Template
+ * author: namespace-it
+ * author-url: https://themeforest.net/user/namespace-it
 
--------------------------------------------------------------------
-CSS TABLE OF CONTENTS
--------------------------------------------------------------------
+    ==================================================
 
-01. header
-02. animated text with swiper slider
-03. magnificPopup
-04. counter up
-05. wow animation
-06. nice select
-07. swiper slider
-08. search popup
-09. mousecursor 
-09. preloader 
-
-
-------------------------------------------------------------------*/
+     01. Mobile Menu
+     -------------------------------------------------
+     02. sidebar toggle 
+     -------------------------------------------------
+     03. open offcanvas nav
+     -------------------------------------------------
+     04. sticky header
+     -------------------------------------------------
+     05. video popup
+     -------------------------------------------------
+     06. video iframe
+     -------------------------------------------------
+     07. counter up
+     -------------------------------------------------
+     08. wow animation
+     -------------------------------------------------
+     09. nice select
+     -------------------------------------------------
+     10. testimonial slider
+     -------------------------------------------------
+     11. banner slider
+     -------------------------------------------------
+     12. apartment slider
+     -------------------------------------------------
+     13. offering slider
+     -------------------------------------------------
+     14. city slider
+     -------------------------------------------------
+     15. city slider two
+     -------------------------------------------------
+     16. add active class to the current link
+     -------------------------------------------------
+     17. on window resize functions
+     -------------------------------------------------
+     18. project slider
+     -------------------------------------------------
+     19. project slider two
+     -------------------------------------------------
+     20. testimonial slider two
+     -------------------------------------------------
+     21. progress bar
+     -------------------------------------------------
+     22. back to top
+     -------------------------------------------------
+     23. price range 
+     -------------------------------------------------
+     24. increment and decrement
+     -------------------------------------------------
+     25. preloader
+     -------------------------------------------------
+     26. countdown
+     -------------------------------------------------
+     27. counter up
+     -------------------------------------------------
+     29. title animation
+     -------------------------------------------------
+     30. template options
+     -------------------------------------------------
+     
+    ==================================================
+============== */
 
 (function ($) {
 	("use strict");
 
 	$(document).ready(function () {
-		//>> Mobile Menu Js Start <<//
+		//<< 01 >> Mobile Menu Js Start <<//
 		$("#mobile-menu").meanmenu({
 			meanMenuContainer: ".mobile-menu",
 			meanScreenWidth: "1199",
 			meanExpand: ['<i class="far fa-plus"></i>'],
 		});
 
-		//>> Sidebar Toggle Js Start <<//
-		$(".offcanvas__close,.offcanvas__overlay").on("click", function () {
-			$(".offcanvas__info").removeClass("info-open");
-			$(".offcanvas__overlay").removeClass("overlay-open");
-		});
-		$(".sidebar__toggle").on("click", function () {
+		//<< 02 >> Sidebar Toggle Js Start <<//
+		$(document).on(
+			"click",
+			".offcanvas__close, .offcanvas__overlay",
+			function () {
+				$(".offcanvas__info").removeClass("info-open");
+				$(".offcanvas__overlay").removeClass("overlay-open");
+			}
+		);
+
+		$(document).on("click", ".sidebar__toggle", function () {
 			$(".offcanvas__info").addClass("info-open");
 			$(".offcanvas__overlay").addClass("overlay-open");
 		});
 
-		//>> Body Overlay Js Start <<//
-		$(".body-overlay").on("click", function () {
-			$(".offcanvas__area").removeClass("offcanvas-opened");
-			$(".df-search-area").removeClass("opened");
+		//<< 03 >> Body Overlay Js Start <<//
+		$(document).on("click", ".body-overlay", function () {
+			$(".offcanvas__area, .df-search-area").removeClass(
+				"offcanvas-opened opened"
+			);
 			$(".body-overlay").removeClass("opened");
 		});
 
-		//>> Sticky Header Js Start <<//
-
-		$(window).scroll(function () {
-			if ($(this).scrollTop() > 250) {
+		//<< 04 >> Sticky Header Js Start <<//
+		$(window).on("scroll", function () {
+			if ($(this).scrollTop() > 450) {
 				$("#header-sticky").addClass("sticky");
 			} else {
 				$("#header-sticky").removeClass("sticky");
 			}
 		});
 
-		//>> Video Popup Start <<//
+		//<< 05 >> Video Popup Start <<//
 		$(".img-popup").magnificPopup({
 			type: "image",
 			gallery: {
@@ -72,24 +123,25 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//<< 06 >> Video iframe Start <<//
 		$(".video-popup").magnificPopup({
 			type: "iframe",
 			callbacks: {},
 		});
 
-		//>> Counterup Start <<//
+		//<< 07 >> Counter up Start <<//
 		$(".count").counterUp({
 			delay: 15,
 			time: 4000,
 		});
 
-		//>> Wow Animation Start <<//
+		//<< 08 >> Wow Animation Start <<//
 		new WOW().init();
 
-		//>> Nice Select Start <<//
+		//<< 09 >> Nice Select Start <<//
 		$("select").niceSelect();
 
-		//>> Testimonial Slider Start <<//
+		//<< 10 >> Testimonial Slider Start <<//
 		if ($(".testimonial-slider").length > 0) {
 			const testimonialSlider = new Swiper(".testimonial-slider", {
 				spaceBetween: 30,
@@ -122,7 +174,7 @@ CSS TABLE OF CONTENTS
 				},
 			});
 		}
-		//Banner Slider1
+		//<< 11 >> Banner Slider1
 		const heroSLider = new Swiper(".hero-slider", {
 			// Optional parameters
 			speed: 4500,
@@ -167,7 +219,7 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
-		//>> Apartment Slider Start <<//
+		//<< 12 >> Apartment Slider Start <<//
 		const apartmentSlider = new Swiper(".apartment-slider", {
 			spaceBetween: 24,
 			speed: 2000,
@@ -207,7 +259,7 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
-		//>> Offinfo Slider Start <<//
+		//<< 13 >> Offering Slider Start <<//
 		const offinformationSlider = new Swiper(".offinformation-slider", {
 			spaceBetween: 24,
 			speed: 2000,
@@ -247,7 +299,7 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
-		//>> city-slider-wrap Start <<//
+		//<< 14 >> city-slider-wrap Start <<//
 		const citySliderWrap = new Swiper(".city-slider-wrap", {
 			spaceBetween: 0,
 			speed: 2000,
@@ -281,7 +333,7 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
-		//>> city-slider-wrap2 Start <<//
+		//<< 15 >> city-slider-wrap2 Start <<//
 		const citySliderWrap2 = new Swiper(".city-slider-wrap2", {
 			spaceBetween: 24,
 			speed: 2000,
@@ -321,7 +373,7 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
-		//>> Brand Slider Start <<//
+		//<< 16 >> Brand Slider Start <<//
 		if ($(".brand-slider").length > 0) {
 			const brandSlider = new Swiper(".brand-slider", {
 				spaceBetween: 30,
@@ -354,9 +406,8 @@ CSS TABLE OF CONTENTS
 				},
 			});
 		}
-		//NOt use Bottom Code
 
-		//>> Project Slider Start <<//
+		//<< 17 >> Project Slider Start <<//
 		if ($(".project-slider").length > 0) {
 			const projectSlider = new Swiper(".project-slider", {
 				spaceBetween: 30,
@@ -393,7 +444,7 @@ CSS TABLE OF CONTENTS
 			});
 		}
 
-		//>> Project Slider Start <<//
+		//<< 18 >> Project Slider Start <<//
 		if ($(".project-slider-2").length > 0) {
 			const projectSlider2 = new Swiper(".project-slider-2", {
 				spaceBetween: 30,
@@ -430,7 +481,7 @@ CSS TABLE OF CONTENTS
 			});
 		}
 
-		//>> Testimonial Slider Start <<//
+		//<< 19 >> Testimonial Slider Start <<//
 		if ($(".testimonial-slider-2").length > 0) {
 			const testimonialSlider2 = new Swiper(".testimonial-slider-2", {
 				spaceBetween: 30,
@@ -464,7 +515,7 @@ CSS TABLE OF CONTENTS
 			});
 		}
 
-		//>> Progress Bar Js Start <<//
+		//<< 20 >> Progress Bar Js Start <<//
 		$(".progress-bar").waypoint(
 			function () {
 				$(".progress-bar").css({
@@ -475,7 +526,7 @@ CSS TABLE OF CONTENTS
 			{ offset: "75%" }
 		);
 
-		//>> Back To Top Slider Start <<//
+		//<< 21 >> Back To Top Slider Start <<//
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 20) {
 				$("#back-top").addClass("show");
@@ -489,7 +540,7 @@ CSS TABLE OF CONTENTS
 		});
 	}); // End Document Ready Function
 
-	//Price Range Slideer
+	//<< 22 >> Price Range Slideer
 	document.addEventListener("DOMContentLoaded", function () {
 		const minSlider = document.getElementById("min-slider");
 		const maxSlider = document.getElementById("max-slider");
@@ -532,7 +583,6 @@ CSS TABLE OF CONTENTS
 		maxSlider && maxSlider.addEventListener("input", updateAmount);
 		// }
 	});
-
 	document.addEventListener("DOMContentLoaded", function () {
 		const bookingForm = document.querySelector("#booking-form");
 
@@ -566,9 +616,7 @@ CSS TABLE OF CONTENTS
 		}
 	});
 
-	//Cart Increment Decriemnt
-
-	// quntity increment and decrement
+	//<< 23 >> quntity increment and decrement
 	$(document).on("click", ".quantityIncrement", function () {
 		const input = $(this).siblings("input");
 		input.val(parseInt(input.val(), 10) + 1);
@@ -579,6 +627,7 @@ CSS TABLE OF CONTENTS
 		if (currentVal > 1) input.val(currentVal - 1);
 	});
 
+	//<< 24 >> Preloader
 	function loader() {
 		$(window).on("load", function () {
 			// Animate loader off screen
